@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<title>Project - PyFileTransfer | Joseph Lefkovitz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
+ <link rel="shortcut icon" type="image/x-icon" href="../images/joseph_square.ico">
+<style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<body class="w3-theme-d5 w3-text-grey">
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" style="z-index:3;width:250px;" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-border-bottom w3-large w3-hover-theme" href="/">
+        <img src="../images/joseph_square.jpg" style="width: 100%" class="w3-circle">
+        <p class="">Joseph Lefkovitz</p>      
+  </a>
+  <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+  <a class="w3-bar-item w3-button w3-hover-light-green" href="/">Home</a>
+  <a class="w3-bar-item w3-button w3-green w3-hover-light-green" href="/projects">Projects</a>
+  <a class="w3-bar-item w3-button w3-hover-light-green" href="https://github.com/lefkovitzj" target="_blank">GitHub</a>
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+<div id="myTop" class="w3-container w3-top w3-green w3-large">
+  <p><i class="fa fa-bars w3-button w3-green w3-hover-green w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+  <span id="myIntro" class="w3-hide">PyFileTransfer</span></p>
+</div>
+
+<header class="w3-container w3-green" style="padding:48px 32px">
+  <h1 class="w3-xxxlarge">PyFileTransfer</h1>
+</header>
+
+<div class="w3-container" style="padding:32px">
+
+<h2>Project Description</h2>
+
+<p>A simple file transfer system using Python sockets.
+<br>
+The server recieves files uploaded by the client, one file at a time, and one client at a time. This project currently has only been configured to work on localhost (127.0.0.1).
+<br><br>
+The necessary files to run PyFileTransfer are:
+<ul>
+    <li>client.py</li>
+    <li>server.py</li>
+    <li>packets.py</li>
+    <li>utils.py</li>
+</ul>
+To launch the console-based menu, run the app.py file from the command line, your IDE, or numerous other methods.
+</p>
+<a href="https://github.com/lefkovitzj/PyFileTransfer" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank">Source Code <i class="fa fa-external-link"></i></a>
+
+<hr>
+<h2>Project Requirements</h2>
+<p>Necessary Python modules include the following:</p>
+<ul class="w3-leftbar w3-border-green" style="list-style:none">
+ <li>Tkinter (Python Standard Library)</li>
+ <li>socket (Python Standard Library)</li>
+ <li>os (Python Standard Library)</li>
+</ul>
+
+<hr>
+<h2>Additional Projects</h2>
+
+<p>Here are some other programming projects that you might be interested in learning about!</p>
+<p>Many of my other programming projects <a href="../projects/" style="text-decoration:none">can be found here</a>.</p>
+
+
+<div class="w3-panel w3-dark-grey w3-padding-16 w3-card">
+<h3 class="w3-center">PyPersonalVault</h3>
+<div class="w3-content" style="max-width:800px">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;This GUI-based application allows users to create "vaults" with distinct passwords and use an individual vault to encrypt or decrypt files using the RSA system.</p>
+<div class="w3-row">
+  <div class="w3-col m6">
+    <a href="py-personal-vault" target="_blank" class="w3-button w3-padding-large w3-green w3-hover-light-green" style="width:98.5%">Project Description</a>
+  </div>
+  <div class="w3-col m6">
+    <a href="https://github.com/lefkovitzj/PyPersonalVault/" class="w3-button w3-padding-large w3-green w3-hover-light-green" style="width:98.5%">Source Code</a>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="w3-panel w3-dark-grey w3-padding-16 w3-card">
+<h3 class="w3-center">Python PDF Editor</h3>
+<div class="w3-content" style="max-width:800px">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;This console-based application allows users to manipulate PDF files, with functionality such as encryption, decryption, file merging, and file compression.</p>
+<div class="w3-row">
+  <div class="w3-col m6">
+    <a href="python-pdf-editor" target="_blank" class="w3-button w3-padding-large w3-green w3-hover-light-green" style="width:98.5%">Project Description</a>
+  </div>
+  <div class="w3-col m6">
+    <a href="https://github.com/lefkovitzj/Python-PDF-Editor/" class="w3-button w3-padding-large w3-green w3-hover-light-green" style="width:98.5%">Source Code</a>
+  </div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+<footer class="w3-container w3-green w3-center" style="padding:32px">
+  <a href="https://github.com/lefkovitzj" target="_blank"><i class="fa fa-github-square w3-hover-opacity"></i></a>&nbsp;|&nbsp;
+  <a href="https://stackoverflow.com/users/20907129/aarontook" target="_blank"><i class="fa fa-stack-overflow w3-hover-opacity"></i></a>&nbsp;|&nbsp;
+  <a href="mailto:flaskdoggo@gmail.com"><i class="fa fa-envelope-square w3-hover-opacity"></i></a>&nbsp;|&nbsp;
+  <a href="https://www.linkedin.com/in/joseph-lefkovitz/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+</footer>
+     
+</div>
+
+<script>
+classList = []
+
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+// Accordions
+function myAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme", "");
+  }
+}
+</script>
+     
+</body>
+</html> 
