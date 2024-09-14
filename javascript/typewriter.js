@@ -19,16 +19,16 @@ var TxtType = function(el, toRotate, period, start) {
         this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
         if (this.start==undefined) {
-			this.start=""
-		}
-			
+            this.start=""
+        }
+
 
         this.el.innerHTML = this.start + "<br><span class='wrap'>"+this.txt+"&nbsp;</span>";
 
         var that = this;
-        var delta = 200 - Math.random() * 100;
+        var delta = 165 - Math.random() * 100;
 
-        if (this.isDeleting) { delta /= 2; }
+        if (this.isDeleting) { delta /= 1.5; }
 
         if (!this.isDeleting && this.txt === fullTxt) {
         delta = this.period;
@@ -36,7 +36,7 @@ var TxtType = function(el, toRotate, period, start) {
         } else if (this.isDeleting && this.txt === '') {
         this.isDeleting = false;
         this.loopNum++;
-        delta = 500;
+        delta = 250;
         }
 
         setTimeout(function() {
