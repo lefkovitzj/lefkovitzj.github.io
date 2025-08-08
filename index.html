@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
+    <script src="javascript/typewriter.js"></script>
+    <script src="javascript/navigation.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="images/joseph_square.ico">
   </head>
 <style>
@@ -55,11 +57,10 @@ body {font-family: "Roboto", sans-serif}
 
 <header class="w3-container w3-green w3-hide-small" style="padding:16px 32px">
   <h1 class="w3-xxxlarge"><p class="typewrite" data-period="1000" data-type='["Computer Science Student", "Programming Hobbyist", "Software Developer" ]' data-starter="I'm Joseph Lefkovitz, "><span class="wrap"></span></h1>
-  <script src="javascript/typewriter.js"></script>
 </header>
 <header class="w3-container w3-green w3-hide-large w3-hide-medium">
   <h1 class="w3-xlarge"><p class="typewrite" style="padding-top: 50px" data-period="1000" data-type='["Computer Science Student", "Programming Hobbyist", "Software Developer" ]' data-starter="I'm Joseph Lefkovitz, "><span class="wrap"></span></h1>
-  <script src="javascript/typewriter.js"></script>
+  
 </header>
 <div class="w3-container paddingless-small w3-padding-32">
 <div class="w3-row w3-margin w3-dark-grey">
@@ -210,45 +211,6 @@ body {font-family: "Roboto", sans-serif}
      
 </div>
 
-<script>
-classList = []
-
-// Open and close the sidebar on medium and small screens
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
-
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Change style of top container on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
-    document.getElementById("myIntro").classList.add("w3-show-inline-block");
-  } else {
-    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
-    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
-  }
-}
-
-// Accordions
-function myAccordion(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-theme";
-  } else { 
-    x.className = x.className.replace("w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-theme", "");
-  }
-}
-</script>
  <style>
 @media only screen and (max-width: 600px) {
   .paddingless-small {
