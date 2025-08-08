@@ -31,5 +31,5 @@ footer {
     padding: 32px !important;
 }
 header .w3-hide-small{
-    padding:16px 32px!;
+    padding:16px 32px!important;
 }
