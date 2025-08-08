@@ -19,18 +19,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
+    <link rel="stylesheet" href="css/base.css">
     
-    <!-- Load needed JS -->
-    <script src="javascript/navigation.js"></script>
     
-    <link rel="shortcut icon" type="image/x-icon" href="../images/joseph_square.ico">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="images/joseph_square.ico">
   </head>
 <style>
 body {font-family: "Roboto", sans-serif}
-.w3-bar-block .w3-bar-item {
-  padding: 16px;
-  font-weight: bold;
-}
 </style>
 <body class="w3-theme-d5 w3-text-grey">
   <!-- Google Tag Manager (noscript) -->
@@ -38,10 +34,10 @@ body {font-family: "Roboto", sans-serif}
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" style="z-index:3;width:250px;" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" id="mySidebar">
 
   <a class="w3-bar-item w3-button w3-border-bottom w3-large w3-hover-theme" href="/">
-        <img src="images/joseph_square.jpg" style="width: 100%" class="w3-circle">
+        <img src="images/joseph_square.jpg" class="w3-circle">
         <p class="">Joseph Lefkovitz</p>      
   </a>
   <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
@@ -50,21 +46,20 @@ body {font-family: "Roboto", sans-serif}
   <a class="w3-bar-item w3-button w3-hover-light-green" href="https://github.com/lefkovitzj" target="_blank">GitHub</a>
 </nav>
 
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" id="myOverlay"></div>
 
-<div class="w3-main" style="margin-left:250px;">
+<div class="w3-main">
 
 <div id="myTop" class="w3-container paddingless-small w3-top w3-green w3-large">
   <p><i class="fa fa-bars w3-button w3-green w3-hover-green w3-hide-large w3-xlarge" onclick="w3_open()"></i>
   <span id="myIntro" class="w3-hide">I'm Joseph Lefkovitz, Computer Science Student and Hobbyist</span></p>
 </div>
 
-<header class="w3-container w3-green w3-hide-small" style="padding:16px 32px">
+<header class="w3-container w3-green w3-hide-small">
   <h1 class="w3-xxxlarge"><p class="typewrite" data-period="1000" data-type='["Computer Science Student", "Programming Hobbyist", "Software Developer" ]' data-starter="I'm Joseph Lefkovitz, "><span class="wrap"></span></h1>
 </header>
 <header class="w3-container w3-green w3-hide-large w3-hide-medium">
   <h1 class="w3-xlarge"><p class="typewrite" style="padding-top: 50px" data-period="1000" data-type='["Computer Science Student", "Programming Hobbyist", "Software Developer" ]' data-starter="I'm Joseph Lefkovitz, "><span class="wrap"></span></h1>
-  
 </header>
 <div class="w3-container paddingless-small w3-padding-32">
 <div class="w3-row w3-margin w3-dark-grey">
@@ -73,7 +68,7 @@ body {font-family: "Roboto", sans-serif}
    <p>&nbsp;&nbsp;&nbsp;&nbsp;I am a college sophomore studying Computer Science. Additionally, I enjoy programming in my spare time, and I am constantly trying to grow as a developer by putting to use what I have already learned.</p>
    <p>&nbsp;&nbsp;&nbsp;&nbsp;When I am not writing code or doing homework, I also teach Tang Soo Do (a Korean martial art), work as a lifeguard, play strategy games, and spend time with family and friends.</p>
    <p>&nbsp;&nbsp;&nbsp;&nbsp;My current plan is to graduate from college and pursue internships in the next few years and eventually work as a software developer or software engineer. I am always interested in learning as much about software and programming as I can, and I spend much of my free time putting that knowledge into action by developing projects. Unfortunately, I often end up disappointed with the end product or it was never intended for anyone else's use, so the projects here represent only a fraction of the code that I have written.</p>
-   <p>&nbsp;&nbsp;&nbsp;&nbsp;Feel free to contact me with any questions or comments that you have about the projects I have developed.<br>You can reach out me by email at <a href="mailto:flaskdoggo@gmail.com" style="text-decoration:none">flaskdoggo@gmail.com</a>.</p>
+   <p>&nbsp;&nbsp;&nbsp;&nbsp;Feel free to contact me with any questions or comments that you have about the projects I have developed.<br>You can reach out me by email at <a href="mailto:flaskdoggo@gmail.com">flaskdoggo@gmail.com</a>.</p>
    
 </div>
 
@@ -168,7 +163,7 @@ body {font-family: "Roboto", sans-serif}
 <div class="w3-container">
 <h2>Programming Projects</h2>
     <div class="w3-container">
-        <h5 class="w3-text-green"><b><a href="projects/python-pdf-editor" target="_blank" style="text-decoration: none;"><i class="fa fa-server fa-fw w3-margin-right"></i>Python PDF Editor</a></b></h5>
+        <h5 class="w3-text-green"><b><a href="projects/python-pdf-editor" target="_blank"><i class="fa fa-server fa-fw w3-margin-right"></i>Python PDF Editor</a></b></h5>
         <span class="w3-light-green w3-tag w3-round">Python 3</span>
         <span class="w3-light-green w3-tag w3-round">PyPDF2</span>
         <span class="w3-light-green w3-tag w3-round">TKinter</span>
@@ -177,7 +172,7 @@ body {font-family: "Roboto", sans-serif}
         <hr>
     </div>
     <div class="w3-container">
-        <h5 class="w3-text-green"><b><a href="projects/pystock" target="_blank" style="text-decoration: none;"><i class="fa fa-server fa-fw w3-margin-right"></i>PyStock</a></b></h5>
+        <h5 class="w3-text-green"><b><a href="projects/pystock" target="_blank"><i class="fa fa-server fa-fw w3-margin-right"></i>PyStock</a></b></h5>
         <span class="w3-light-green w3-tag w3-round">Python 3</span>
         <span class="w3-light-green w3-tag w3-round">YFinance</span>
         <span class="w3-light-green w3-tag w3-round">Pygame</span>
@@ -188,7 +183,7 @@ body {font-family: "Roboto", sans-serif}
         <hr>
     </div>
     <div class="w3-container">
-        <h5 class="w3-text-green"><b><a href="projects/py-personal-vault" target="_blank" style="text-decoration: none;"><i class="fa fa-server fa-fw w3-margin-right"></i>PyPersonalVault</a></b></h5>
+        <h5 class="w3-text-green"><b><a href="projects/py-personal-vault" target="_blank"><i class="fa fa-server fa-fw w3-margin-right"></i>PyPersonalVault</a></b></h5>
         <span class="w3-light-green w3-tag w3-round">Python</span>
         <span class="w3-light-green w3-tag w3-round">PyCryptoDome</span>
         <span class="w3-light-green w3-tag w3-round">CustomTkinter</span>
@@ -206,7 +201,7 @@ body {font-family: "Roboto", sans-serif}
 </div>
 
 
-<footer class="w3-container w3-green w3-center" style="padding:32px">
+<footer class="w3-container w3-green w3-center">
   <a href="https://github.com/lefkovitzj" target="_blank"><i class="fa fa-github-square w3-hover-opacity"></i></a>&nbsp;|&nbsp;
   <a href="https://stackoverflow.com/users/20907129/aarontook" target="_blank"><i class="fa fa-stack-overflow w3-hover-opacity"></i></a>&nbsp;|&nbsp;
   <a href="mailto:flaskdoggo@gmail.com"><i class="fa fa-envelope-square w3-hover-opacity"></i></a>&nbsp;|&nbsp;
@@ -222,5 +217,7 @@ body {font-family: "Roboto", sans-serif}
   }
 }
 </style>
+<!-- Load needed JS -->
+<script src="javascript/navigation.js"></script>
 </body>
 </html> 

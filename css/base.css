@@ -1,0 +1,35 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+.w3-bar-block .w3-bar-item {
+    padding: 16px;
+    font-weight: bold;
+}
+nav#mySidebar {
+    z-index: 3;
+    width: 250px;
+}
+#myOverlay {
+    cursor: pointer;
+}
+header {
+    padding: 48px 32px !important;
+}
+a {
+    text-decoration: none;
+}
+div.w3-third a {
+    width: 100%;
+}
+div.w3-main {
+    margin-left: 250px;
+}
+img.w3-circle {
+    width: 100%;
+}
+footer {
+    padding: 32px !important;
+}
+header .w3-hide-small{
+    padding:16px 32px!;
+}

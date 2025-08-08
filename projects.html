@@ -19,30 +19,24 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
+    <link rel="stylesheet" href="css/base.css">
     
     <!-- Load needed JS -->
     <script src="javascript/navigation.js"></script>
     
-    <link rel="shortcut icon" type="image/x-icon" href="../images/joseph_square.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="images/joseph_square.ico">
   </head>
 
-  <style>
-  body {font-family: "Roboto", sans-serif}
-  .w3-bar-block .w3-bar-item {
-    padding: 16px;
-    font-weight: bold;
-  }
-  </style>
   <body class="w3-theme-d5 w3-text-grey">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTDSVS82"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" style="z-index:3;width:250px;" id="mySidebar">
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" id="mySidebar">
 
       <a class="w3-bar-item w3-button w3-border-bottom w3-large w3-hover-theme" href="/">
-        <img src="images/joseph_square.jpg" style="width: 100%" class="w3-circle">
+        <img src="images/joseph_square.jpg" class="w3-circle">
         <p class="">Joseph Lefkovitz</p>
       </a>
       <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
@@ -51,22 +45,22 @@
       <a class="w3-bar-item w3-button w3-hover-light-green" href="https://github.com/lefkovitzj" target="_blank">GitHub</a>
     </nav>
 
-    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" id="myOverlay"></div>
 
-    <div class="w3-main" style="margin-left:250px;">
+    <div class="w3-main">
 
     <div id="myTop" class="w3-container w3-top w3-green w3-large">
       <p><i class="fa fa-bars w3-button w3-green w3-hover-green w3-hide-large w3-xlarge" onclick="w3_open()"></i>
       <span id="myIntro" class="w3-hide">My Programming Projects</span></p>
     </div>
 
-    <header class="w3-container w3-green" style="padding:48px 32px">
+    <header class="w3-container w3-green">
       <h1 class="w3-xxxlarge">My Programming Projects</h1>
     </header>
 
     <div class="w3-container" style="padding:32px">
     <div class="w3-row w3-margin w3-dark-grey">
-    <a href="projects/py-pdf-app" style="text-decoration:none"><div class="w3-twothird w3-container"><div class="w3-twothird w3-container">
+    <a href="projects/py-pdf-app"><div class="w3-twothird w3-container"><div class="w3-twothird w3-container">
       <h2>PyPdfApp</h2>
       <p>This project creates a robust PDF viewing and manipulation application with a user interface.
     </p>
@@ -74,13 +68,13 @@
     </div>
     </a>
     <div class="w3-third w3-container">
-        <p><a href="https://github.com/lefkovitzj/PyPdfApp/" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank" style="width:100%">Source Code <i class="fa fa-external-link"></i></a></p>
+        <p><a href="https://github.com/lefkovitzj/PyPdfApp/" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank">Source Code <i class="fa fa-external-link"></i></a></p>
         <p>Built with: <span class="w3-light-green w3-tag w3-round">Python</span> <span class="w3-light-green w3-tag w3-round">PyMuPDF</span> <span class="w3-light-green w3-tag w3-round">CustomTinter</span> <span class="w3-light-green w3-tag w3-round">Pillow</span> <span class="w3-light-green w3-tag w3-round">Requests</span></p>
     </div>
     </div>
 
     <div class="w3-row w3-margin w3-dark-grey">
-    <a href="projects/py-file-transfer" style="text-decoration:none"><div class="w3-twothird w3-container"><div class="w3-twothird w3-container">
+    <a href="projects/py-file-transfer"><div class="w3-twothird w3-container"><div class="w3-twothird w3-container">
       <h2>PyFileTransfer</h2>
       <p>This project creates a simple file transfer system using Python sockets. Send files from the client to the server over localhost.
     </p>
@@ -88,28 +82,28 @@
     </div>
     </a>
     <div class="w3-third w3-container">
-        <p><a href="https://github.com/lefkovitzj/PyFileTransfer/" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank" style="width:100%">Source Code <i class="fa fa-external-link"></i></a></p>
+        <p><a href="https://github.com/lefkovitzj/PyFileTransfer/" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank">Source Code <i class="fa fa-external-link"></i></a></p>
         <p>Built with: <span class="w3-light-green w3-tag w3-round">Python</span> <span class="w3-light-green w3-tag w3-round">Sockets</span> <span class="w3-light-green w3-tag w3-round">TKinter</span></p>
     </div>
     </div>
 
     <div class="w3-row w3-margin w3-dark-grey">
-    <a href="projects/pycrypter" style="text-decoration:none"><div class="w3-twothird w3-container"><div class="w3-twothird w3-container">
+    <a href="projects/pycrypter"><div class="w3-twothird w3-container"><div class="w3-twothird w3-container">
       <h2>PyCrypter</h2>
       <p>
-      As a light-weight alternative to <a href="py-personal-vault" style="text-decoration:none">my PyPersonalVault project</a>, PyCrypter performs fast encryption or decryption of multiple files using AES with a salted version of the password.
+      As a light-weight alternative to <a href="py-personal-vault">my PyPersonalVault project</a>, PyCrypter performs fast encryption or decryption of multiple files using AES with a salted version of the password.
       </p>
     </div>
     </div>
     </a>
     <div class="w3-third w3-container">
-        <p><a href="https://github.com/lefkovitzj/PyCrypter/" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank" style="width:100%">Source Code <i class="fa fa-external-link"></i></a></p>
+        <p><a href="https://github.com/lefkovitzj/PyCrypter/" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank">Source Code <i class="fa fa-external-link"></i></a></p>
         <p>Built with: <span class="w3-light-green w3-tag w3-round">Python</span> <span class="w3-light-green w3-tag w3-round">PyCryptodome</span> <span class="w3-light-green w3-tag w3-round">TKinter</span></p>
     </div>
     </div>
 
     <div class="w3-row w3-margin w3-dark-grey">
-    <a href="projects/py-personal-vault" style="text-decoration:none"><div class="w3-twothird w3-container"><div class="w3-twothird w3-container">
+    <a href="projects/py-personal-vault"><div class="w3-twothird w3-container"><div class="w3-twothird w3-container">
       <h2>PyPersonalVault</h2>
       <p>
       An encryption service application that uses RSA encryption to secure files. This project is built in Python, primarily using the PyCryptodome and CustomTkinter modules.
@@ -118,13 +112,13 @@
     </div>
     </a>
     <div class="w3-third w3-container">
-        <p><a href="https://github.com/lefkovitzj/PyPersonalVault/" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank" style="width:100%">Source Code <i class="fa fa-external-link"></i></a></p>
+        <p><a href="https://github.com/lefkovitzj/PyPersonalVault/" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank">Source Code <i class="fa fa-external-link"></i></a></p>
         <p>Built with: <span class="w3-light-green w3-tag w3-round">Python</span> <span class="w3-light-green w3-tag w3-round">PyCryptodome</span> <span class="w3-light-green w3-tag w3-round">CustomTkinter</span></p>
     </div>
     </div>
 
     <div class="w3-row w3-margin w3-dark-grey">
-    <a href="projects/python-pdf-editor" style="text-decoration:none"><div class="w3-twothird w3-container"><div class="w3-twothird w3-container">
+    <a href="projects/python-pdf-editor"><div class="w3-twothird w3-container"><div class="w3-twothird w3-container">
       <h2>Python PDF Editor</h2>
       <p>
       Python PDF Editor is a simple script to display a menu in the console or command-line. Using this project, you can merge, resize, encrypt, decrypt, and re-encrypt PDF files.
@@ -133,13 +127,13 @@
     </div>
     </a>
     <div class="w3-third w3-container">
-        <p><a href="https://github.com/lefkovitzj/Python-PDF-Editor/" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank" style="width:100%">Source Code <i class="fa fa-external-link"></i></a></p>
+        <p><a href="https://github.com/lefkovitzj/Python-PDF-Editor/" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank">Source Code <i class="fa fa-external-link"></i></a></p>
         <p>Built with: <span class="w3-light-green w3-tag w3-round">Python</span> <span class="w3-light-green w3-tag w3-round">PYPDF</span> <span class="w3-light-green w3-tag w3-round">Tkinter</span></p>
     </div>
     </div>
 
     <div class="w3-row w3-margin w3-dark-grey">
-    <a href="projects/pystock" style="text-decoration:none"><div class="w3-twothird w3-container"><div class="w3-twothird w3-container">
+    <a href="projects/pystock"><div class="w3-twothird w3-container"><div class="w3-twothird w3-container">
       <h2>PyStock</h2>
       <p>
       A stock market GUI made in Python.
@@ -148,13 +142,13 @@
     </div>
     </a>
     <div class="w3-third w3-container">
-        <p><a href="https://github.com/lefkovitzj/PyStock/" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank" style="width:100%">Source Code <i class="fa fa-external-link"></i></a></p>
+        <p><a href="https://github.com/lefkovitzj/PyStock/" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank">Source Code <i class="fa fa-external-link"></i></a></p>
         <p>Built with: <span class="w3-light-green w3-tag w3-round">Python</span> <span class="w3-light-green w3-tag w3-round">pygame</span> <span class="w3-light-green w3-tag w3-round">yfinance</span></p>
     </div>
     </div>
 
     <div class="w3-row w3-margin w3-dark-grey">
-    <a href="projects/assorted-java-programs" style="text-decoration:none"><div class="w3-twothird w3-container">
+    <a href="projects/assorted-java-programs"><div class="w3-twothird w3-container">
       <h2>Assorted Java Programs</h2>
       <p>
       A collection of small Java programs created for a computer science class.
@@ -162,14 +156,14 @@
     </div>
     </a>
     <div class="w3-third w3-container">
-        <p><a href="https://github.com/lefkovitzj/Python-PDF-Editor/" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank" style="width:100%">Source Code <i class="fa fa-external-link"></i></a></p>
+        <p><a href="https://github.com/lefkovitzj/Python-PDF-Editor/" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank">Source Code <i class="fa fa-external-link"></i></a></p>
         <p>Built with: <span class="w3-light-green w3-tag w3-round">Java</span> <span class="w3-light-green w3-tag w3-round">Eclipse IDE</span></p>
     </div>
     </div>
 
     </div>
 
-    <footer class="w3-container w3-green w3-center" style="padding:32px">
+    <footer class="w3-container w3-green w3-center">
       <a href="https://github.com/lefkovitzj" target="_blank"><i class="fa fa-github-square w3-hover-opacity"></i></a>&nbsp;|&nbsp;
       <a href="https://stackoverflow.com/users/20907129/aarontook" target="_blank"><i class="fa fa-stack-overflow w3-hover-opacity"></i></a>&nbsp;|&nbsp;
       <a href="mailto:flaskdoggo@gmail.com"><i class="fa fa-envelope-square w3-hover-opacity"></i></a>&nbsp;|&nbsp;
