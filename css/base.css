@@ -7,12 +7,17 @@ a {
     text-decoration: none;
 }
 
-div.project-links a {
+div.project-links a, div.contact-me a {
     width: 98.5%;
 }
 
 h3 {
     font-size: 18px;
+}
+
+div.contact-me {
+    padding-bottom: 24px;
+
 }
 
 /* Sidebar and Navigation Styles */
