@@ -15,32 +15,25 @@
 
     <!-- Load needed CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
+    <link rel="stylesheet" href="../css/base.css">
     
     <!-- Load needed JS -->
-    <script src="javascript/navigation.js"></script>
+    <script src="../javascript/navigation.js"></script>
     
     <link rel="shortcut icon" type="image/x-icon" href="../images/joseph_square.ico">
   </head>
-<style>
-body {font-family: "Roboto", sans-serif}
-.w3-bar-block .w3-bar-item {
-  padding: 16px;
-  font-weight: bold;
-}
-</style>
 <body class="w3-theme-d5 w3-text-grey">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTDSVS82"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" style="z-index:3;width:250px;" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" id="mySidebar">
   <a class="w3-bar-item w3-button w3-border-bottom w3-large w3-hover-theme" href="/">
-        <img src="../images/joseph_square.jpg" style="width: 100%" class="w3-circle">
+        <img src="../images/joseph_square.jpg" class="w3-circle">
         <p class="">Joseph Lefkovitz</p>      
   </a>
   <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
@@ -49,16 +42,16 @@ body {font-family: "Roboto", sans-serif}
   <a class="w3-bar-item w3-button w3-hover-light-green" href="https://github.com/lefkovitzj" target="_blank">GitHub</a>
 </nav>
 
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" id="myOverlay"></div>
 
-<div class="w3-main" style="margin-left:250px;">
+<div class="w3-main">
 
 <div id="myTop" class="w3-container w3-top w3-green w3-large">
   <p><i class="fa fa-bars w3-button w3-green w3-hover-green w3-hide-large w3-xlarge" onclick="w3_open()"></i>
   <span id="myIntro" class="w3-hide">Assorted Java Programs</span></p>
 </div>
 
-<header class="w3-container w3-green" style="padding:48px 32px">
+<header class="w3-container w3-green">
   <h1 class="w3-xxxlarge">Assorted Java Programs</h1>
 </header>
 
@@ -70,7 +63,7 @@ body {font-family: "Roboto", sans-serif}
 Sorted alphabetically, here is a list of the different Java projects with a brief description of what each one does:
 <ol>
     <li>Account.java - Contains a class to represent a bank account and containing methods to simulate withdrawals, deposits, setting the account balance, getting account information, and calculating monthly interest rate from the given annual interest rate (among other minor methods). Test these methods in the "main" function with predetirmined data.</li><br>
-    <li>BabyNames.java - Load the data file (<a href="https://liveexample.pearsoncmg.com/data/babynameranking2001.txt" style="text-decoration:none" target="_blank">located at https://liveexample.pearsoncmg.com/data/babynameranking2001.txt <i class="fa fa-external-link"></i></a>) and list all of the popular baby names that were used for both genders.</li><br>
+    <li>BabyNames.java - Load the data file (<a href="https://liveexample.pearsoncmg.com/data/babynameranking2001.txt"  target="_blank">located at https://liveexample.pearsoncmg.com/data/babynameranking2001.txt <i class="fa fa-external-link"></i></a>) and list all of the popular baby names that were used for both genders.</li><br>
     <li>CircleClass.java - Contains a class to represent a circle and containing methods to get the area, find the perimiter, detect if a point is within the circle, and detirmine if another circle overlaps with the first circle. Test these methods in the "main" function with predetirmined data.</li><br>
     <li>ConsecutiveEqualNumbers.java - Create and populate a two-dimensional array. The program then will search it for four consecutive (horizontal, vertical, or diagonal) equal numbers and display whether or not such a case exists within the two-dimensional array.</li><br>
     <li>CreditCardValidation.java - Check whether an entered number could be a credit card number and display the result.</li><br>
@@ -88,7 +81,7 @@ Each of these programs runs independently from the others, and no external code 
 <h2>Additional Projects</h2>
 
 <p>Here are some other programming projects that you might be interested in learning about!</p>
-<p>Many of my other programming projects <a href="../projects" style="text-decoration:none">can be found here</a>.</p>
+<p>Many of my other programming projects <a href="../projects">can be found here</a>.</p>
 
 
 <div class="w3-panel w3-dark-grey w3-padding-16 w3-card">
@@ -97,10 +90,10 @@ Each of these programs runs independently from the others, and no external code 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;This console-based application allows users to manipulate PDF files, with functionality such as encryption, decryption, file merging, and file compression.</p>
 <div class="w3-row">
   <div class="w3-col m6">
-    <a href="python-pdf-editor" target="_blank" class="w3-button w3-padding-large w3-green w3-hover-light-green" style="width:98.5%">Project Description</a>
+    <a href="python-pdf-editor" target="_blank" class="w3-button w3-padding-large w3-green w3-hover-light-green">Project Description</a>
   </div>
   <div class="w3-col m6">
-    <a href="https://github.com/lefkovitzj/Python-PDF-Editor/" class="w3-button w3-padding-large w3-green w3-hover-light-green" style="width:98.5%">Source Code</a>
+    <a href="https://github.com/lefkovitzj/Python-PDF-Editor/" class="w3-button w3-padding-large w3-green w3-hover-light-green">Source Code</a>
   </div>
 </div>
 </div>
@@ -112,10 +105,10 @@ Each of these programs runs independently from the others, and no external code 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;This GUI-based application allows users to view and compare data about recent stock prices for any valid ticker over six pre-selected periods.</p>
 <div class="w3-row">
   <div class="w3-col m6">
-    <a href="pystock" target="_blank" class="w3-button w3-padding-large w3-green w3-hover-light-green" style="width:98.5%">Project Description</a>
+    <a href="pystock" target="_blank" class="w3-button w3-padding-large w3-green w3-hover-light-green">Project Description</a>
   </div>
   <div class="w3-col m6">
-    <a href="https://github.com/lefkovitzj/PyStock/" class="w3-button w3-padding-large w3-green w3-hover-light-green" style="width:98.5%">Source Code </a>
+    <a href="https://github.com/lefkovitzj/PyStock/" class="w3-button w3-padding-large w3-green w3-hover-light-green">Source Code </a>
   </div>
 </div>
 </div>
@@ -123,7 +116,7 @@ Each of these programs runs independently from the others, and no external code 
 
 </div>
 
-<footer class="w3-container w3-green w3-center" style="padding:32px">
+<footer class="w3-container w3-green w3-center">
   <a href="https://github.com/lefkovitzj" target="_blank"><i class="fa fa-github-square w3-hover-opacity"></i></a>&nbsp;|&nbsp;
   <a href="https://stackoverflow.com/users/20907129/aarontook" target="_blank"><i class="fa fa-stack-overflow w3-hover-opacity"></i></a>&nbsp;|&nbsp;
   <a href="mailto:flaskdoggo@gmail.com"><i class="fa fa-envelope-square w3-hover-opacity"></i></a>&nbsp;|&nbsp;

@@ -1,35 +1,57 @@
+/* General Body and Link Styles */
 body {
     font-family: "Roboto", sans-serif;
 }
-.w3-bar-block .w3-bar-item {
-    padding: 16px;
-    font-weight: bold;
+
+a {
+    text-decoration: none;
 }
+
+div.project-links a {
+    width: 98.5%;
+}
+
+/* Sidebar and Navigation Styles */
 nav#mySidebar {
     z-index: 3;
     width: 250px;
 }
+
 #myOverlay {
     cursor: pointer;
 }
-header {
-    padding: 48px 32px !important;
+
+.w3-bar-block .w3-bar-item {
+    padding: 16px;
+    font-weight: bold;
 }
-a {
-    text-decoration: none;
+
+ul.w3-leftbar {
+    list-style: none;
 }
-div.w3-third a {
-    width: 100%;
-}
+
 div.w3-main {
     margin-left: 250px;
 }
-img.w3-circle {
-    width: 100%;
+
+/* Header and Footer Styles */
+header {
+    padding: 48px 32px !important;
 }
+
+header .w3-hide-small {
+    padding: 16px 32px !important;
+}
+
 footer {
     padding: 32px !important;
 }
-header .w3-hide-small{
-    padding:16px 32px!important;
+
+/* Image and Layout Styles */
+div.w3-third a {
+    width: 100%;
+}
+
+img.w3-circle {
+    width: 100%;
 }
