@@ -11,6 +11,10 @@ div.project-links a {
     width: 98.5%;
 }
 
+h3 {
+    font-size: 18px;
+}
+
 /* Sidebar and Navigation Styles */
 nav#mySidebar {
     z-index: 3;
