@@ -64,3 +64,10 @@ div.w3-third a {
 img.w3-circle {
     width: 100%;
 }
+
+/* List Styles */
+.bullet-icon {
+    width: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+ }

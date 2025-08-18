@@ -69,20 +69,16 @@ body {font-family: "Roboto", sans-serif}
 <div class="w3-row w3-margin w3-dark-grey">
 <div class="w3-container">
   <h2>Who am I?</h2>
-   <p>&nbsp;&nbsp;&nbsp;&nbsp;I am a college sophomore studying Computer Science. Additionally, I enjoy programming in my spare time, and I am constantly trying to grow as a developer by putting to use what I have already learned.</p>
-   <p>&nbsp;&nbsp;&nbsp;&nbsp;When I am not writing code or doing homework, I also teach Tang Soo Do (a Korean martial art), work as a lifeguard, play strategy games, and spend time with family and friends.</p>
-   <p>&nbsp;&nbsp;&nbsp;&nbsp;My current plan is to graduate from college and pursue internships in the next few years and eventually work as a software developer or software engineer. I am always interested in learning as much about software and programming as I can, and I spend much of my free time putting that knowledge into action by developing projects. Unfortunately, I often end up disappointed with the end product or it was never intended for anyone else's use, so the projects here represent only a fraction of the code that I have written.</p>
-   <p>&nbsp;&nbsp;&nbsp;&nbsp;Feel free to contact me with any questions or comments that you have about the projects I have developed.<br>You can reach out me by email at <a href="mailto:lefkovitzjoe@gmail.com">lefkovitzjoe@gmail.com</a>.</p>
-   
+   <p>&nbsp;&nbsp;&nbsp;&nbsp;I am a college Junior studying Computer Science at the University of Dayton, with dual concentrations in Software Engineering and Cybersecurity. I have already earned my associate's degree in Computer Science from Sinclair Community College, and I recently completed a 9+ month Software Engineering Internship at NexSens Technology. I'm currently looking for my next role in Software Engineering, with a dedication to pursuing excllence in all that I do.</p>
+   <p>&nbsp;&nbsp;&nbsp;&nbsp;In my free time I serve as the Vice President of the University of Dayton chapter of the Association of Computing Machinery, develop open-source software projects, and spend time with family and friends.</p>
 </div>
 
 </div>
 <div class="w3-row w3-margin w3-dark-grey">
 <div class="w3-container">
   <h2>Skills & Knowledge</h2>
-  <p>
   <p class="w3-large w3-text-light-green"><b><i class="fa fa-code w3-margin-right w3-text-light-green"></i>Programming & Scripting Languages</b></p>
-          <p>Python</p>
+          <h4>Python</h4>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-green w3-animate-opacity" style="width:80%">Advanced</div>
           </div>
@@ -95,47 +91,77 @@ body {font-family: "Roboto", sans-serif}
           <span class="w3-light-green w3-tag w3-round">PyPDF2</span>
           <br>
           <hr>
-          <p>HTML/CSS</p>
+          <h4>PHP</h4>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-green w3-animate-opacity" style="width:60%">Intermediate</div>
+          </div>
+          <br>
+          <span class="w3-light-green w3-tag w3-round">Symfony</span>
+          <span class="w3-light-green w3-tag w3-round">WordPress</span>
+          <br>
+          <hr>
+          <h4>HTML/CSS</h4>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-green w3-animate-opacity" style="width:60%">Intermediate</div>
           </div>
           <br>
           <span class="w3-light-green w3-tag w3-round">HTML5</span>
           <span class="w3-light-green w3-tag w3-round">CSS3</span>
+          <span class="w3-light-green w3-tag w3-round">Bootstrap</span>
           <span class="w3-light-green w3-tag w3-round">W3.CSS</span>
           <br>
           <hr>
-          <p>Java</p>
+          <h4>Java</h4>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-green w3-animate-opacity" style="width:60%">Intermediate</div>
           </div>
           <hr>
-          <p>C++</p>
+          <h4>C++</h4>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-green w3-animate-opacity" style="width:40%">Fundamental</div>
           </div>
   </p>
   <br>
   <p class="w3-large w3-text-light-green"><b><i class="fa fa-code w3-margin-right w3-text-light-green"></i>Operating Systems & Developer Tools</b></p>
-  <p>Windows</p>
-  <div class="w3-light-grey w3-round-xlarge w3-small">
-        <div class="w3-container w3-center w3-round-xlarge w3-green w3-animate-opacity" style="width:80%">Advanced</div>
+  
+  <!-- Start Dev Tools Accordion-->
+  <!-- Version Control -->
+  <button onclick="openAccordion('tools-version-control')" class="w3-button w3-block w3-left-align w3-round-xlarge w3-green w3-hover-light-green w3-hover-text-white">
+    <i class="fa fa-code-fork bullet-icon"></i>Version Control <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="tools-version-control" class="w3-container w3-hide w3-show">
+    <br>
+    <span><i class="fa fa-git bullet-icon"></i>Git<br></span>
+    <span><i class="fa fa-github bullet-icon"></i>GitHub<br></span>
   </div>
-  <hr>
-  <p>Linux</p>
-  <div class="w3-light-grey w3-round-xlarge w3-small">
-        <div class="w3-container w3-center w3-round-xlarge w3-green w3-animate-opacity" style="width:60%">Intermediate</div>
+  <br>
+  <!-- Version Control -->
+  <button onclick="openAccordion('tools-aws')" class="w3-button w3-block w3-left-align w3-round-xlarge w3-green w3-hover-light-green w3-hover-text-white">
+    <i class="fa fa-amazon bullet-icon"></i>AWS <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="tools-aws" class="w3-container w3-hide w3-show">
+    <br>
+    <span><i class="fa fa-cloud bullet-icon"></i>Elastic Compute Cloud (EC2)<br></span>
+    <span><i class="fa fa-file-image-o bullet-icon"></i>Simple Storage Service (S3)<br></span>
+    <span><i class="fa fa-database bullet-icon"></i>Relational Database Service (RDS)<br></span>
+    <span><i class="fa fa-tasks bullet-icon"></i>Simple Queue Service (SQS)<br></span>
+    <span><i class="fa fa-user bullet-icon"></i>IAM<br></span>
   </div>
-  <hr>
-  <p>GitHub</p>
-  <div class="w3-light-grey w3-round-xlarge w3-small">
-        <div class="w3-container w3-center w3-round-xlarge w3-green w3-animate-opacity" style="width:60%">Intermediate</div>
+  <br>
+  <!-- Linux -->
+  <button onclick="openAccordion('tools-linux')" class="w3-button w3-block w3-left-align w3-round-xlarge w3-green w3-hover-light-green w3-hover-text-white">
+    <i class="fa fa-linux bullet-icon"></i>Linux <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="tools-linux" class="w3-container w3-hide w3-show">
+    <br>
+    <span><i class="fa fa-linux bullet-icon"></i>Debian<br></span>
+    <span><i class="fa fa-linux bullet-icon"></i>CentOS<br></span>
+    <span><i class="fa fa-linux bullet-icon"></i>Rocky Linux<br></span>
+    <span><i class="fa fa-linux bullet-icon"></i>Linux Mint<br></span>
   </div>
-  <hr>
-  <p>Heroku</p>
-  <div class="w3-light-grey w3-round-xlarge w3-small">
-        <div class="w3-container w3-center w3-round-xlarge w3-green w3-animate-opacity" style="width:40%">Fundamental</div>
-  </div>
+  <br>
+  
+  <!-- End Dev Tools Accordion-->
   <br>
 </div>
 
