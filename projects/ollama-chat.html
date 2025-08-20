@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+      <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MTDSVS82');
+      </script>
+    <!-- End Google Tag Manager -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project - ACM Ollama Chat | Joseph Lefkovitz</title>
+    
+    <!-- Image preload -->
+    <link rel="preload" href="../images/profile.jpg" as="image" media="(width > 992px)" />
+
+    <!-- Load needed CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
+    <link rel="stylesheet" href="../css/base.css">
+    
+    <!-- Load needed JS -->
+    <script src="../javascript/navigation.js"></script>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../images/josephl.ico">
+  </head>
+<body class="w3-theme-d5 w3-text-grey">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTDSVS82"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-border-bottom w3-large w3-hover-theme" href="/">
+        <img src="../images/profile.jpg" class="w3-circle" alt="my professional headshot photo" style="width:218px">
+        <p class="">Joseph Lefkovitz</p>      
+  </a>
+  <button class="w3-bar-item w3-button w3-hide-large w3-large" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+  <a class="w3-bar-item w3-button w3-hover-light-green" href="/">Home</a>
+  <a class="w3-bar-item w3-button w3-green w3-hover-light-green" href="/projects">Projects</a>
+  <a class="w3-bar-item w3-button w3-hover-light-green" href="https://github.com/lefkovitzj" target="_blank">GitHub</a>
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" id="myOverlay"></div>
+
+<div class="w3-main">
+
+<div id="myTop" class="w3-container w3-top w3-green w3-large">
+  <p><i class="fa fa-bars w3-button w3-green w3-hover-green w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+  <span id="myIntro" class="w3-hide">ACM Ollama Chat</span></p>
+</div>
+
+<header class="w3-container w3-green">
+  <h1 class="w3-xxxlarge">ACM Ollama Chat</h1>
+</header>
+
+<div class="w3-container" style="padding:32px">
+
+<h2>Project Description</h2>
+
+<p>ACM Ollama Chat is a custom wrapper utility to allow communication with a local deployment of open-source LLMs, specifically the Ollama 3:8b model. This project is intended for deployment on the University of Dayton ACM student chapter's Debian server using a Dockerized Ollama instance, a Python application and a bash script.
+<br><br>
+To confiugre the application on your server, follow the instructions provided in the project's README.md file.
+</p>
+<a href="https://github.com/acm-udayton/acm-ollama-chat" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank">Source Code <i class="fa fa-external-link"></i></a>
+
+<hr>
+<h2>Project Requirements</h2>
+<p>Necessary Python modules include the following:</p>
+<ul class="w3-leftbar w3-border-green">
+ <li>Flask (<a href="https://flask.palletsprojects.com/" target="_blank">Third-party module <i class="fa fa-external-link"></i></a>)</li>
+ <li>Flask-Login (<a href="https://flask-login.readthedocs.io/en/latest/" target="_blank">Third-party module <i class="fa fa-external-link"></i></a>)</li>
+ <li>Flask-SQLAlchemy (<a href="https://flask-sqlalchemy.readthedocs.io/en/stable/" target="_blank">Third-party module <i class="fa fa-external-link"></i></a>)</li>
+ <li>gunicorn (<a href="https://gunicorn.org/" target="_blank">Third-party module <i class="fa fa-external-link"></i></a>)</li>
+ <li>python-dotenv (<a href="https://pypi.org/project/python-dotenv/" target="_blank">Third-party module <i class="fa fa-external-link"></i></a>)</li>
+ <li>Hashlib (Python Standard Library)</li>
+ <li>secrets (Python Standard Library)</li>
+ <li>string (Python Standard Library)</li>
+ <li>logging (Python Standard Library)</li>
+ <li>wraps (Python Standard Library)</li>
+ <li>os (Python Standard Library)</li>
+ <li>re (Python Standard Library)</li>
+ <li>logging (Python Standard Library)</li>
+</ul>
+
+<hr>
+<h2>Additional Projects</h2>
+
+<p>Here are some other programming projects that you might be interested in learning about!</p>
+<p>Many of my other programming projects <a href="../projects">can be found here</a>.</p>
+
+<div class="w3-panel w3-dark-grey w3-padding-16 w3-card">
+<h3 class="w3-center">PyPdfApp</h3>
+<div class="w3-content" style="max-width:800px">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;A desktop app for PDF management. Create, modify, and view PDFs with capabilities ranging from page markup and rotation to file compression, encryption,and signature.</p>
+<div class="w3-row">
+  <div class="w3-col m6">
+    <a href="py-pdf-app" target="_blank" class="w3-button w3-padding-large w3-green w3-hover-light-green">Project Description</a>
+  </div>
+  <div class="w3-col m6">
+    <a href="https://github.com/lefkovitzj/PyPdfApp/" class="w3-button w3-padding-large w3-green w3-hover-light-green">Source Code </a>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="w3-panel w3-dark-grey w3-padding-16 w3-card">
+<h3 class="w3-center">ACM Meeting Records</h3>
+<div class="w3-content" style="max-width:800px">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;This web application allows for role-based management of and access to meeting attendance and meeting minutes for the University of Dayton ACM chapter. This application is dockerized for deployment on the organization's server, using a SQLite database and a flask web application.</p>
+<div class="w3-row">
+  <div class="w3-col m6">
+    <a href="acm-meeting-records" target="_blank" class="w3-button w3-padding-large w3-green w3-hover-light-green">Project Description</a>
+  </div>
+  <div class="w3-col m6">
+    <a href="https://github.com/lefkovitzj/ACM-Meeting-Records/" class="w3-button w3-padding-large w3-green w3-hover-light-green">Source Code</a>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<footer class="w3-container w3-green w3-center">
+  <a href="https://github.com/lefkovitzj" target="_blank" aria-label="GitHub Account"><i class="fa fa-github-square w3-hover-opacity"></i></a>&nbsp;|&nbsp;
+  <a href="https://stackoverflow.com/users/20907129/aarontook" target="_blank" aria-label="StackOverflow Account"><i class="fa fa-stack-overflow w3-hover-opacity"></i></a>&nbsp;|&nbsp;
+  <a href="mailto:lefkovitzjoe@gmail.com" aria-label="Email Address"><i class="fa fa-envelope-square w3-hover-opacity"></i></a>&nbsp;|&nbsp;
+  <a href="https://www.linkedin.com/in/joseph-lefkovitz/" target="_blank" aria-label="LinkedIn Account"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+</footer>
+     
+</div>
+     
+</body>
+</html>
