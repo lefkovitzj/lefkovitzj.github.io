@@ -70,4 +70,10 @@ img.w3-circle {
     width: 25px;
     padding-top: 5px;
     padding-bottom: 5px;
- }
+}
+
+@media only screen and (max-width: 600px) {
+    .paddingless-small {
+        padding: 0px;
+    }
+}
