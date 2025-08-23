@@ -1,176 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Google Tag Manager -->
-      <script>
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-MTDSVS82');
-      </script>
-    <!-- End Google Tag Manager -->
-    <title>Project - PyPdfApp | Joseph Lefkovitz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: project
+title: PyPdfApp
+project_title: PyPdfApp
+project_run: Run the project by executing the app.py file in the command line, IDE, or any other method to run a Python file.
+project_source_link: https://github.com/lefkovitzj/PyPdfApp
+credits_thanks_message: A massive thank you to the developers and contributors of the PyMuPDF, CustomTkinter, requests, and Pillow projects!
+credits_thanks:
+  - docs_url: https://pymupdf.readthedocs.io/
+    name: PyMuPDF
+  - docs_url: https://customtkinter.tomschimansky.com/
+    name: CustomTKinter
+  - docs_url: https://requests.readthedocs.io/
+    name: Requests
+  - docs_url: https://pillow.readthedocs.io/
+    name: Pillow
+  - docs_url: https://www.pycryptodome.org/
+    name: PyCryptoDome
 
-    <!-- Image preload -->
-    <link rel="preload" href="../images/profile.jpg" as="image" media="(width > 992px)" />
+requirements_message: "Necessary Python modules include the following:"
+requirements:
+  - text: PyMuPDF
+    subtext: Third-party module
+    link: https://pymupdf.readthedocs.io/
+  - text: CustomTKinter
+    subtext: Third-party module
+    link: https://customtkinter.tomschimansky.com/documentation/
+  - text: Requests
+    subtext: Third-party module
+    link: https://requests.readthedocs.io/
+  - text: Pillow
+    subtext: Third-party module
+    link: https://pillow.readthedocs.io/
+  - text: PyCryptoDome
+    subtext: Third-party module
+    link: https://www.pycryptodome.org/
+  - text: PyMuPDF
+    subtext: Third-party module
+    link: https://pymupdf.readthedocs.io/
+  - text: TKinter
+    subtext: Python Standard Library
+  - text: os
+    subtext: Python Standard Library
+  - text: sys
+    subtext: Python Standard Library
+  - text: json
+    subtext: Python Standard Library
+  - text: webbrowser
+    subtext: Python Standard Library
 
-    <!-- Load needed CSS -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
-    <link rel="stylesheet" href="../css/base.css">
-    
-    <!-- Load needed JS -->
-    <script src="../javascript/navigation.js"></script>
-    
-    <link rel="shortcut icon" type="image/x-icon" href="../images/josephl.ico">
-  </head>
-<body class="w3-theme-d5 w3-text-grey">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTDSVS82"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+projects:
+  - name: Python PDF Editor
+    description: This console-based application allows users to manipulate PDF files, with functionality such as encryption, decryption, file merging, and file compression.
+    path: python-pdf-editor
+    source: https://github.com/lefkovitzj/Python-PDF-Editor/
+  - name: PyFileTransfer
+    description: A simple project built using Python's sockets module, designed for simple transfer of files between a server and client.
+    path: py-file-transfer
+    source: https://github.com/lefkovitzj/PyFileTransfer/
 
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" id="mySidebar">
-  <a class="w3-bar-item w3-button w3-border-bottom w3-large w3-hover-theme" href="/">
-        <img src="../images/profile.jpg" class="w3-circle" alt="my professional headshot photo" style="width:218px">
-        <p class="">Joseph Lefkovitz</p>
-  </a>
-  <button class="w3-bar-item w3-button w3-hide-large w3-large" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
-  <a class="w3-bar-item w3-button w3-hover-light-green" href="/">Home</a>
-  <a class="w3-bar-item w3-button w3-green w3-hover-light-green" href="/projects">Projects</a>
-  <a class="w3-bar-item w3-button w3-hover-light-green" href="https://github.com/lefkovitzj" target="_blank">GitHub</a>
-</nav>
+---
+A PDF manipulation and access application developed in Python using the PyMuPDF and CustomTkinter modules.
+  <br>
+  The source code provides a GUI application for viewing and manipulation of PDF files.
 
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" id="myOverlay"></div>
-
-<div class="w3-main">
-
-<div id="myTop" class="w3-container w3-top w3-green w3-large">
-  <p><i class="fa fa-bars w3-button w3-green w3-hover-green w3-hide-large w3-xlarge" onclick="w3_open()"></i>
-  <span id="myIntro" class="w3-hide">PyPdfApp</span></p>
-</div>
-
-<header class="w3-container w3-green">
-  <h1 class="w3-xxxlarge">PyPdfApp</h1>
-</header>
-
-<div class="w3-container" style="padding:32px">
-
-<h2>Project Description</h2>
-
-<p>A PDF manipulation and access application developed in Python using the PyMuPDF and CustomTkinter modules.
-<br>
-The source code provides a GUI application for viewing and manipulation of PDF files.
-
-The features are included:
-<ul>
-    <li>Page re-arrangement, creation, & deletion</li>
-    <li>Page rotation</li>
-    <li>Page insertion</li>
-    <li>Page deletion</li>
-    <li>Page watermarking</li>
-    <li>Page markup (red pen)</li>
-    <li>File watermarking</li>
-    <li>Text Extraction</li>
-    <li>Image Extraction</li>
-    <li>PDF Encryption</li>
-    <li>PDF Decryption</li>
-    <li>PDF Compression</li>
-    <li>PDF Signature</li>
-    <li>Metadata modification</li>
-    <li>Handle multiple PDFs at once</li>
-    <li>Automatic software version update checker</li>
-    <li>Software source code file tampering detection</li>
-    
-</ul>
-<br>
-The application also allows you to view the pages of a PDF, adjust the zoom, navigate between pages, use keyboard shortcuts, and save copies of a PDF.
-<br><br>
-
-Run the project by executing the app.py file in the command line, IDE, or any other method to run a Python file.
-</p>
-<a href="https://github.com/lefkovitzj/Assorted-Java-Projects/" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank">Source Code <i class="fa fa-external-link"></i></a>
-
-<hr>
-<h2>Project Requirements</h2>
-<p>Necessary Python modules include the following:</p>
-<ul class="w3-leftbar w3-border-green">
- <li>PyMuPDF (<a href="https://pymupdf.readthedocs.io/"  target="_blank">Third-party module <i class="fa fa-external-link"></i></a>)</li>
- <li>CustomTkinter (<a href="https://customtkinter.tomschimansky.com/documentation/"  target="_blank">Third-party module <i class="fa fa-external-link"></i></a>)</li>
- <li>Requests (<a href="https://requests.readthedocs.io/"  target="_blank">Third-party module <i class="fa fa-external-link"></i></a>)</li>
- <li>Pillow (<a href="https://pillow.readthedocs.io/"  target="_blank">Third-party module <i class="fa fa-external-link"></i></a>)</li>
- <li>PyCryptoDome (<a href="https://www.pycryptodome.org/"  target="_blank">Third-party module <i class="fa fa-external-link"></i></a>)</li>
- <li>Tkinter (Python Standard Library)</li>
- <li>os (Python Standard Library)</li>
- <li>sys (Python Standard Library)</li>
- <li>json (Python Standard Library)</li>
- <li>webbrowser (Python Standard Library)</li>
-</ul>
-
-
-<hr>
-<h2>Credits & Thanks</h2>
-<div class="w3-container w3-dark-grey w3-leftbar w3-border-green">
-<p>A massive thank you to the developers and contributors of the PyMuPDF, CustomTkinter, requests, and Pillow projects!<br><br>
-<i><a href="https://pymupdf.readthedocs.io/"  target="_blank">Learn more about PyMuPDF.</a></i><br>
-<i><a href="https://customtkinter.tomschimansky.com/"  target="_blank">Learn more about CustomTkinter.</a></i><br>
-<i><a href="https://requests.readthedocs.io/"  target="_blank">Learn more about Requests.</a></i><br>
-<i><a href="https://pillow.readthedocs.io/"  target="_blank">Learn more about Pillow.</a></i><br>
-<i><a href="https://www.pycryptodome.org/"  target="_blank">Learn more about PyCryptoDome</a></i>
-</p>
-</div>
-
-<hr>
-<h2>Additional Projects</h2>
-
-<p>Here are some other programming projects that you might be interested in learning about!</p>
-<p>Many of my other programming projects <a href="../projects/">can be found here</a>.</p>
-
-
-<div class="w3-panel w3-dark-grey w3-padding-16 w3-card">
-<h3 class="w3-center">Python PDF Editor</h3>
-<div class="w3-content" style="max-width:800px">
-<p>&nbsp;&nbsp;&nbsp;&nbsp;This console-based application allows users to manipulate PDF files, with functionality such as encryption, decryption, file merging, and file compression.</p>
-<div class="w3-row project-links">
-  <div class="w3-col m6">
-    <a href="python-pdf-editor" target="_blank" class="w3-button w3-padding-large w3-green w3-hover-light-green">Project Description</a>
-  </div>
-  <div class="w3-col m6">
-    <a href="https://github.com/lefkovitzj/Python-PDF-Editor/" class="w3-button w3-padding-large w3-green w3-hover-light-green">Source Code</a>
-  </div>
-</div>
-</div>
-</div>
-
-<div class="w3-panel w3-dark-grey w3-padding-16 w3-card">
-<h3 class="w3-center">PyFileTransfer</h3>
-<div class="w3-content" style="max-width:800px">
-<p>&nbsp;&nbsp;&nbsp;&nbsp;A simple project built using Python's sockets module, designed for simple transfer of files between a server and client.</p>
-<div class="w3-row project-links">
-  <div class="w3-col m6">
-    <a href="py-file-transfer" target="_blank" class="w3-button w3-padding-large w3-green w3-hover-light-green">Project Description</a>
-  </div>
-  <div class="w3-col m6">
-    <a href="https://github.com/lefkovitzj/PyFileTransfer/" class="w3-button w3-padding-large w3-green w3-hover-light-green">Source Code </a>
-  </div>
-</div>
-</div>
-</div>
-
-</div>
-
-<footer class="w3-container w3-green w3-center">
-  <a href="https://github.com/lefkovitzj" target="_blank" aria-label="GitHub Account"><i class="fa fa-github-square w3-hover-opacity"></i></a>&nbsp;|&nbsp;
-  <a href="https://stackoverflow.com/users/20907129/aarontook" target="_blank" aria-label="StackOverflow Account"><i class="fa fa-stack-overflow w3-hover-opacity"></i></a>&nbsp;|&nbsp;
-  <a href="mailto:lefkovitzjoe@gmail.com" aria-label="Email Address"><i class="fa fa-envelope-square w3-hover-opacity"></i></a>&nbsp;|&nbsp;
-  <a href="https://www.linkedin.com/in/joseph-lefkovitz/" target="_blank" aria-label="LinkedIn Account"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-</footer>
-
-</div>
-
-</body>
-</html>
+  The features are included:
+  <ul>
+      <li>Page re-arrangement, creation, & deletion</li>
+      <li>Page rotation</li>
+      <li>Page insertion</li>
+      <li>Page deletion</li>
+      <li>Page watermarking</li>
+      <li>Page markup (red pen)</li>
+      <li>File watermarking</li>
+      <li>Text Extraction</li>
+      <li>Image Extraction</li>
+      <li>PDF Encryption</li>
+      <li>PDF Decryption</li>
+      <li>PDF Compression</li>
+      <li>PDF Signature</li>
+      <li>Metadata modification</li>
+      <li>Handle multiple PDFs at once</li>
+      <li>Automatic software version update checker</li>
+      <li>Software source code file tampering detection</li>
+      
+  </ul>
+  <br>
+  The application also allows you to view the pages of a PDF, adjust the zoom, navigate between pages, use keyboard shortcuts, and save copies of a PDF.
