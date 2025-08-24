@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  jekyll:
+    image: jekyll/jekyll:latest
+    container_name: jekyll_site
+    volumes:
+      - .:/srv/jekyll
+    ports:
+      - "4000:4000" # For Jekyll server
+      - "35729:35729" # For Livereload
+    command: sh -c "bundle install && bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling"
