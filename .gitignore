@@ -3,3 +3,6 @@ docker-compose.yml
 Gemfile
 Gemfile.lock
 _site
+
+# Project crossreference TXT document.
+projects/crossreference.txt
