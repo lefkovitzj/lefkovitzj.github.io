@@ -1,68 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Google Tag Manager -->
-      <script>
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-MTDSVS82');
-      </script>
-    <!-- End Google Tag Manager -->
-    <title>Project - Assorted Java Programs | Joseph Lefkovitz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: project
+title: Assorted Java Programs
+project_title: Assorted Java Programs
+project_run: Each of these programs runs independently from the others, and no external code is necessary other than a recent Java installation.
+project_source_link: https://github.com/lefkovitzj/Assorted-Java-Projects/
 
-    <!-- Image preload -->
-    <link rel="preload" href="../images/profile.jpg" as="image" media="(width > 992px)" />
+projects:
+  - name: Python PDF Editor
+    description: This console-based application allows users to manipulate PDF files, with functionality such as encryption, decryption, file merging, and file compression.
+    path: python-pdf-editor
+    source: https://github.com/lefkovitzj/Python-PDF-Editor/
+  - name: PyStock
+    description: This GUI-based application allows users to view and compare data about recent stock prices for any valid ticker over six pre-selected periods.
+    path: pystock
+    source: https://github.com/lefkovitzj/PyStock/
 
-    <!-- Load needed CSS -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
-    <link rel="stylesheet" href="../css/base.css">
-    
-    <!-- Load needed JS -->
-    <script src="../javascript/navigation.js"></script>
-    
-    <link rel="shortcut icon" type="image/x-icon" href="../images/josephl.ico">
-  </head>
-<body class="w3-theme-d5 w3-text-grey">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTDSVS82"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" id="mySidebar">
-  <a class="w3-bar-item w3-button w3-border-bottom w3-large w3-hover-theme" href="/">
-        <img src="../images/profile.jpg" class="w3-circle" alt="my professional headshot photo" style="width:218px">
-        <p class="">Joseph Lefkovitz</p>      
-  </a>
-  <button class="w3-bar-item w3-button w3-hide-large w3-large" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
-  <a class="w3-bar-item w3-button w3-hover-light-green" href="/">Home</a>
-  <a class="w3-bar-item w3-button w3-green w3-hover-light-green" href="/projects">Projects</a>
-  <a class="w3-bar-item w3-button w3-hover-light-green" href="https://github.com/lefkovitzj" target="_blank">GitHub</a>
-</nav>
-
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" id="myOverlay"></div>
-
-<div class="w3-main">
-
-<div id="myTop" class="w3-container w3-top w3-green w3-large">
-  <p><i class="fa fa-bars w3-button w3-green w3-hover-green w3-hide-large w3-xlarge" onclick="w3_open()"></i>
-  <span id="myIntro" class="w3-hide">Assorted Java Programs</span></p>
-</div>
-
-<header class="w3-container w3-green">
-  <h1 class="w3-xxxlarge">Assorted Java Programs</h1>
-</header>
-
-<div class="w3-container" style="padding:32px">
-
-<h2>Project Description</h2>
-
-<p>A collection of small Java programs created for a Computer Science class.
+---
+A collection of small Java programs created for a Computer Science class.
 Sorted alphabetically, here is a list of the different Java projects with a brief description of what each one does:
 <ol>
     <li>Account.java - Contains a class to represent a bank account and containing methods to simulate withdrawals, deposits, setting the account balance, getting account information, and calculating monthly interest rate from the given annual interest rate (among other minor methods). Test these methods in the "main" function with predetirmined data.</li><br>
@@ -75,58 +29,3 @@ Sorted alphabetically, here is a list of the different Java projects with a brie
     <li>PhoneKeypads.java - Converts any alphabet character or numerical character to a number (as is often labeled on landline phones), and display the binary of that number.</li><br>
     <li>TaxComputation.java - Calculate the federal income tax based off of defined criteria for different tax brackets.</li>
 </ol>
-<br><br>
-Each of these programs runs independently from the others, and no external code is necessary other than a recent Java installation.
-</p>
-<a href="https://github.com/lefkovitzj/Assorted-Java-Projects/" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank">Source Code <i class="fa fa-external-link"></i></a>
-
-<hr>
-<h2>Additional Projects</h2>
-
-<p>Here are some other programming projects that you might be interested in learning about!</p>
-<p>Many of my other programming projects <a href="../projects">can be found here</a>.</p>
-
-
-<div class="w3-panel w3-dark-grey w3-padding-16 w3-card">
-<h3 class="w3-center">Python PDF Editor</h3>
-<div class="w3-content" style="max-width:800px">
-<p>&nbsp;&nbsp;&nbsp;&nbsp;This console-based application allows users to manipulate PDF files, with functionality such as encryption, decryption, file merging, and file compression.</p>
-<div class="w3-row">
-  <div class="w3-col m6">
-    <a href="python-pdf-editor" target="_blank" class="w3-button w3-padding-large w3-green w3-hover-light-green">Project Description</a>
-  </div>
-  <div class="w3-col m6">
-    <a href="https://github.com/lefkovitzj/Python-PDF-Editor/" class="w3-button w3-padding-large w3-green w3-hover-light-green">Source Code</a>
-  </div>
-</div>
-</div>
-</div>
-
-<div class="w3-panel w3-dark-grey w3-padding-16 w3-card">
-<h3 class="w3-center">PyStock</h3>
-<div class="w3-content" style="max-width:800px">
-<p>&nbsp;&nbsp;&nbsp;&nbsp;This GUI-based application allows users to view and compare data about recent stock prices for any valid ticker over six pre-selected periods.</p>
-<div class="w3-row">
-  <div class="w3-col m6">
-    <a href="pystock" target="_blank" class="w3-button w3-padding-large w3-green w3-hover-light-green">Project Description</a>
-  </div>
-  <div class="w3-col m6">
-    <a href="https://github.com/lefkovitzj/PyStock/" class="w3-button w3-padding-large w3-green w3-hover-light-green">Source Code </a>
-  </div>
-</div>
-</div>
-</div>
-
-</div>
-
-<footer class="w3-container w3-green w3-center">
-  <a href="https://github.com/lefkovitzj" target="_blank" aria-label="GitHub Account"><i class="fa fa-github-square w3-hover-opacity"></i></a>&nbsp;|&nbsp;
-  <a href="https://stackoverflow.com/users/20907129/aarontook" target="_blank" aria-label="StackOverflow Account"><i class="fa fa-stack-overflow w3-hover-opacity"></i></a>&nbsp;|&nbsp;
-  <a href="mailto:lefkovitzjoe@gmail.com" aria-label="Email Address"><i class="fa fa-envelope-square w3-hover-opacity"></i></a>&nbsp;|&nbsp;
-  <a href="https://www.linkedin.com/in/joseph-lefkovitz/" target="_blank" aria-label="LinkedIn Account"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-</footer>
-
-</div>
-     
-</body>
-</html> 
