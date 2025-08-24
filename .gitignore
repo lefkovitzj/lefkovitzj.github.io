@@ -1,0 +1,6 @@
+# Development environment for Jekyll with Docker-compose.
+Gemfile.lock
+_site
+
+# Project crossreference TXT document.
+projects/crossreference.txt

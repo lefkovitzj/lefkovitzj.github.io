@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+  <body class="w3-theme-d5 w3-text-grey">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTDSVS82"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    {% include navbar.html %}
+
+    <div class="w3-main">
+
+        <div id="myTop" class="w3-container w3-top w3-green w3-large">
+            <p><i class="fa fa-bars w3-button w3-green w3-hover-green w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+            <span id="myIntro" class="w3-hide">{{ page.project_title }}</span></p>
+            </div>
+
+            <header class="w3-container w3-green">
+            <h1 class="w3-xxxlarge">{{ page.project_title }}</h1>
+            </header>
+
+            <div class="w3-container" style="padding:32px">
+
+            <h2>Project Description</h2>
+
+            <p> {{ page.project_description }} {{ content }}
+            <br><br>
+
+            {{ page.project_run }}
+            Run the project by executing the app.py file in the command line, IDE, or any other method to run a Python file.
+            </p>
+            <a href="{{ page.project_source_link }}" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank">Source Code <i class="fa fa-external-link"></i></a>
+
+            {% if page.requirements_message and page.requirements.size != 0 %}
+                <hr>
+                <h2>Project Requirements</h2>
+                <p>{{page.requirements_message}}</p>
+                <ul class="w3-leftbar w3-border-green">
+                {% for req in page.requirements %}
+                    <li>{{ req.text }} (
+                        {% if req.link %}
+                            <a href="{{req.link}}"  target="_blank">{{req.subtext}} <i class="fa fa-external-link"></i></a>
+                        {% else %}
+                            {{req.subtext}}
+                        {% endif %}
+                    )</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+
+            {% if page.credits_thanks_message %}
+                <hr>
+                <h2>Credits & Thanks</h2>
+                <div class="w3-container w3-dark-grey w3-leftbar w3-border-green">
+                    <p>{{ page.credits_thanks_message }}
+                        {% if page.credits_thanks and page.credits_thanks.size != 0 %}
+                            <br>
+                            <br>
+                            {% for ct in page.credits_thanks %}
+                                <i><a href="{{ct.docs_url}}"  target="_blank">Learn more about {{ct.name}}.</a></i><br>
+                            {% endfor %}
+                        {% endif %}
+                    </p>
+                </div>
+            {% endif %}
+
+            {% if page.projects.size != 0 %}
+                <hr>
+                <h2>Additional Projects</h2>
+
+                <p>Here are some other programming projects that you might be interested in learning about!</p>
+                <p>Many of my other programming projects <a href="/projects/">can be found here</a>.</p>
+
+                {% for proj in page.projects %}
+                    <div class="w3-panel w3-dark-grey w3-padding-16 w3-card">
+                    <h3 class="w3-center">{{ proj.name }}</h3>
+                    <div class="w3-content" style="max-width:800px">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ proj.description }}</p>
+                    <div class="w3-row project-links">
+                    <div class="w3-col m6">
+                        <a href="{{ proj.path }}" target="_blank" class="w3-button w3-padding-large w3-green w3-hover-light-green">Project Description</a>
+                    </div>
+                    <div class="w3-col m6">
+                        <a href="{{ proj.source }}" class="w3-button w3-padding-large w3-green w3-hover-light-green">Source Code</a>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+        </div>
+        {% include footer.html %}
+    </div>
+
+  </body>
+</html>
