@@ -46,16 +46,18 @@
                 </ul>
             {% endif %}
 
-            {% if page.credits_thanks_message and page.credits_thanks.size != 0 %}
+            {% if page.credits_thanks_message %}
                 <hr>
                 <h2>Credits & Thanks</h2>
                 <div class="w3-container w3-dark-grey w3-leftbar w3-border-green">
                     <p>{{ page.credits_thanks_message }}
-                        <br>
-                        <br>
-                        {% for ct in page.credits_thanks %}
-                            <i><a href="{{ct.docs_url}}"  target="_blank">Learn more about {{ct.name}}.</a></i><br>
-                        {% endfor %}
+                        {% if page.credits_thanks and page.credits_thanks.size != 0 %}
+                            <br>
+                            <br>
+                            {% for ct in page.credits_thanks %}
+                                <i><a href="{{ct.docs_url}}"  target="_blank">Learn more about {{ct.name}}.</a></i><br>
+                            {% endfor %}
+                        {% endif %}
                     </p>
                 </div>
             {% endif %}
