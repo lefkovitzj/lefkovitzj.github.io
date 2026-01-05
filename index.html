@@ -70,7 +70,7 @@ title: Home
           </div>
   </p>
   <br>
-  <p class="w3-large w3-text-light-green"><b><i class="fa fa-code w3-margin-right w3-text-light-green"></i>Operating Systems & Developer Tools</b></p>
+  <p class="w3-large w3-text-light-green"><b><i class="fa fa-code w3-margin-right w3-text-light-green"></i>Infrastructure & Ecosystem</b></p>
   
   <!-- Start Dev Tools Accordion-->
   <!-- Version Control -->
@@ -83,9 +83,21 @@ title: Home
     <span><i class="fa fa-github bullet-icon"></i>GitHub<br></span>
   </div>
   <br>
+  <!-- DevOps -->
+  <button onclick="openAccordion('tools-devops')" class="w3-button w3-block w3-left-align w3-round-xlarge w3-green w3-hover-light-green w3-hover-text-white">
+    <i class="fa-solid fa-infinity bullet-icon"></i>DevOps <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="tools-devops" class="w3-container w3-hide w3-show">
+    <br>
+    <span><i class="fa-brands fa-docker bullet-icon"></i>Docker<br></span>
+    <span><i class="fa-regular fa-circle-play bullet-icon"></i>GitHub Actions<br></span>
+    <span><i class="fa-solid fa-chart-line bullet-icon"></i> Grafana & Prometheus</span><br>
+    <span><i class="fa-solid fa-cubes bullet-icon"></i> Portainer</span><br>
+  </div>
+  <br>
   <!-- Version Control -->
   <button onclick="openAccordion('tools-aws')" class="w3-button w3-block w3-left-align w3-round-xlarge w3-green w3-hover-light-green w3-hover-text-white">
-    <i class="fa fa-amazon bullet-icon"></i>AWS <i class="fa fa-caret-down"></i>
+    <i class="fa-brands fa-aws bullet-icon"></i>AWS <i class="fa fa-caret-down"></i>
   </button>
   <div id="tools-aws" class="w3-container w3-hide w3-show">
     <br>
@@ -93,7 +105,7 @@ title: Home
     <span><i class="fa fa-file-image-o bullet-icon"></i>Simple Storage Service (S3)<br></span>
     <span><i class="fa fa-database bullet-icon"></i>Relational Database Service (RDS)<br></span>
     <span><i class="fa fa-tasks bullet-icon"></i>Simple Queue Service (SQS)<br></span>
-    <span><i class="fa fa-user bullet-icon"></i>IAM<br></span>
+    <span><i class="fa fa-user bullet-icon"></i>Identity and Access Management (IAM)<br></span>
   </div>
   <br>
   <!-- Linux -->
@@ -102,10 +114,9 @@ title: Home
   </button>
   <div id="tools-linux" class="w3-container w3-hide w3-show">
     <br>
-    <span><i class="fa fa-linux bullet-icon"></i>Debian<br></span>
-    <span><i class="fa fa-linux bullet-icon"></i>CentOS<br></span>
-    <span><i class="fa fa-linux bullet-icon"></i>Rocky Linux<br></span>
-    <span><i class="fa fa-linux bullet-icon"></i>Linux Mint<br></span>
+    <span><i class="fa-brands fa-ubuntu bullet-icon"></i>Ubuntu Server<br></span>
+    <span><i class="fa-brands fa-redhat bullet-icon"></i>RHEL-based (CentOS, Rocky)<br></span>
+    <span><i class="fa-brands fa-debian bullet-icon"></i>Debian<br></span>
   </div>
   <br>
   
