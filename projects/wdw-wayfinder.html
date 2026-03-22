@@ -1,0 +1,55 @@
+---
+layout: project
+title: WDW Wayfinder
+project_title: WDW Wayfinder
+project_run: To launch the web server, deploy the docker configuration on the device you wish to run the server on.
+project_source_link: https://github.com/lefkovitzj/WDW-Wayfinder
+credits_thanks_message: A massive thank you to the Walt Disney World fanbase for providing copious information regarding resorts and transit, most especially the various experts on Allears.net!
+credits_thanks:
+  - docs_url: https://allears.net/
+    name: Allears.net's resort and transportation information
+
+requirements_message: "Necessary Python modules and system dependencies include the following:"
+requirements:
+  - text: FastAPI
+    subtext: Backend framework
+    link: https://fastapi.tiangolo.com/
+  - text: HTMX
+    subtext: Dynamic frontend interactions
+    link: https://htmx.org/
+  - text: Docker
+    subtext: Containerization
+    link: https://docker.com/
+  - text: Tailwind CSS
+    subtext: CSS framework
+    link: https://tailwindcss.com/
+
+projects:
+  - name: ACM Meeting Records
+    description: This web application allows for role-based management of and access to meeting attendance and meeting minutes for the University of Dayton ACM chapter. This application is dockerized for deployment on the organization's server, using a SQLite database and a flask web application.
+    path: acm-meeting-records
+    source: https://github.com/acm-udayton/ACM-Meeting-Records/
+
+---
+<p>
+    <a href="https://wdw-wayfinder.lefkovitzj.com/" target="_blank">
+        <img src="https://raw.githubusercontent.com/lefkovitzj/WDW-Wayfinder/refs/heads/main/app/static/images/social-preview.png" alt="WDW Wayfinder Social Preview" style="max-width:600px;margin-bottom:16px;border-radius: 8px;">
+    </a>
+</p>
+A live demo is currently available at <a href="https://wdw-wayfinder.lefkovitzj.com/" target="_blank">https://wdw-wayfinder.lefkovitzj.com/</a>, hosted on Render's free tier, so initial boot times may be slow if the application does not have recent traffic. 
+<br><br>
+<a href="https://wdw-wayfinder.lefkovitzj.com/" class="w3-button w3-padding-large w3-green w3-hover-light-green" target="_blank">Live Demo <i class="fa fa-external-link"></i></a>
+<br><br>
+<hr>
+<br>A
+
+Official Walt Disney World planning tools are useful for direct point-to-point navigation, but they typically underperform for resort-to-resort travel, chained itineraries, and multi-stop optimization. They often miss the practical complexity of transfers, non-obvious routing options, and the tradeoffs required when building an efficient day plan with several destinations.
+<br><br>
+There's just too much data and too many constraints for a human to reliably optimize without computational assistance, and that's where WDW Wayfinder comes in. By modeling the entire transit network as a directed graph and applying pathfinding and optimization techniques, the tool identifies the best possible routes across the entire system — not just the most obvious ones.
+<br><br>
+One of my many interests is optimization and strategy, and I have a particular passion for Disney parks, so this project was a natural fit to combine those interests. Originally built as a learning tool to better understand graph theory, this project has evolved substantially. To make the system functional I had to research and create a custom dataset for all the possible routes within the Walt Disney World transportation system. This too, is included under the MIT open-source license the project uses, and could be used for other applications beyond this project. 
+<br><br>
+This project is one of my first attempts at partially using AI-assisted development while building an application.
+AI tools such as GitHub Copilot were used to help brainstorm, prototype, and refactor parts of the code - especially the frontend design and JavaScript, with final design and validation decisions made manually. Much of the debugging was also done manually when artificial intelligence tools produced incorrect, inefficient, or otherwise suboptimal code. 
+<br><br>
+The project uses FastAPI for the backend, HTMX for dynamic frontend interactions, Tailwind CSS for styling, and Docker for containerization. The system models the entire Walt Disney World transportation network as a directed weighted multigraph, where nodes represent locations (parks, resorts, transportation hubs) and edges represent transit routes with weights corresponding to travel times. A modified Held-Karp algorithm is implemented to solve the optimization problem of finding the most efficient route given a set of start and endpoints as well as a list of intermediate destinations.
