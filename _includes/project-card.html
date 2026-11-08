@@ -1,0 +1,16 @@
+<article class="card project-card">
+  <div class="card-body">
+    <p class="eyebrow">{{ include.project.category | default: 'Software project' | escape }}</p>
+    <{{ include.heading | default: 'h3' }} class="project-card-title">
+      <a href="{{ include.project.url | relative_url }}">{{ include.project.title | escape }}</a>
+    </{{ include.heading | default: 'h3' }}>
+    <p class="project-summary">{{ include.project.summary | escape }}</p>
+    <div class="tags" aria-label="Technologies">
+      {% for tag in include.project.technologies %}<span class="badge badge-soft">{{ tag | escape }}</span>{% endfor %}
+    </div>
+    <div class="project-actions">
+      <a href="{{ include.project.url | relative_url }}">Project details</a>
+      {% if include.project.project_source_link %}<a href="{{ include.project.project_source_link }}" target="_blank" rel="noopener noreferrer">Source code</a>{% endif %}
+    </div>
+  </div>
+</article>

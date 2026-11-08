@@ -1,7 +1,14 @@
 ---
 layout: project
+project_id: acm-meeting-records
+category: Community software
+summary: "A containerized web application for role-based management of an ACM student chapter's meetings, attendance, and historical records."
+technologies: ["Python", "Flask", "Docker", "SQLite"]
+order: 2
+featured: true
+related_projects: ["wdw-wayfinder", "py-pdf-app"]
 title: ACM Meeting Records
-project_title: ACM Meeting Records
+seo_title: ACM Meeting Records — Chapter Management
 project_run: To launch the web server, deploy the docker configuration on the device you wish to run the server on.
 project_source_link: https://github.com/acm-udayton/ACM-Meeting-Records
 credits_thanks_message: A massive thank you to the developers and contributors to Flask via the Pallets project!
@@ -32,16 +39,7 @@ requirements:
   - text: Pillow
     subtext: Third-party module
     link: https://python-pillow.org/
-
-projects:
-  - name: WDW Wayfinder
-    description: This web application allows users to plan efficient transportation routes within Walt Disney World, utilizing a comprehensive directected weighted multigraph to model the park transportation system and a modified Held-Karp algorithm to find optimal routes.
-    path: wdw-wayfinder
-    source: https://github.com/lefkovitzj/WDW-Wayfinder/
-  - name: PyPdfApp
-    description: A desktop app for PDF management. Create, modify, and view PDFs with capabilities ranging from page markup and rotation to file compression, encryption,and signature.
-    path: py-pdf-app
-    source: https://github.com/lefkovitzj/PyPdfApp/
-
 ---
-ACM Meeting Records is a Python-based web application that allows for management of meetings for the student chapter of the Association of Computing Machinery at the University of Dayton, where I currently serve as Vice President of the organization. This web app allows administrators to record meeting minutes, add attendees, create, update, and end meetings. Other organization members can mark attendance with a meeting passcode and view historical meeting information.<br><br>The system also allows the addition of meeting attachments for presentations or other relevant resources. The application implements multiple security features, including CSRF, reCAPTCHA, account validation, and multi-factor Authentication with both TOTP and recovery codes.
+<p>ACM Meeting Records is a Python-based web application that allows for management of meetings for the student chapter of the Association of Computing Machinery at the University of Dayton, where I help lead the organization. This web app allows administrators to record meeting minutes, add attendees, create, update, and end meetings. Other organization members can mark attendance with a meeting passcode and view historical meeting information.</p>
+
+<p>The system also allows the addition of meeting attachments for presentations or other relevant resources. The application implements multiple security features, including CSRF, reCAPTCHA, account validation, and multi-factor Authentication with both TOTP and recovery codes.</p>

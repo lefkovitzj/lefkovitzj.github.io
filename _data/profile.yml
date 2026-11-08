@@ -1,0 +1,40 @@
+biography:
+  - >-
+    I'm Joseph Lefkovitz, a computer science student at the University of Dayton, expecting to graduate in May 2027. My interests include backend engineering, self-hosting, open-source software, and quantum computing. I also help lead the University of Dayton's ACM chapter.
+  - >-
+    After interning in JPMorgan Chase's Software Engineering Program during summer 2026, I'll return as a Software Engineering Program Analyst in July 2027. Previously, I worked as a Computer Science Intern at NexSens Technology.
+experience:
+  - company: JPMorgan Chase
+    role: Software Engineering Program Analyst
+    incoming: true
+    start: July 2027
+    start_date: "2027-07"
+  - company: University of Dayton ISSec Lab
+    role: Undergraduate Researcher
+    start: November 2026
+    start_date: "2026-11"
+    end: Current
+    end_date: "2027-05"
+  - company: JPMorgan Chase
+    role: Software Engineering Program Intern
+    start: June 2026
+    start_date: "2026-06"
+    end: August 2026
+    end_date: "2026-08"
+  - company: NexSens Technology
+    role: Computer Science Intern
+    start: October 2024
+    start_date: "2024-10"
+    end: August 2025
+    end_date: "2025-08"
+education:
+  - institution: University of Dayton
+    degree: Bachelor of Science in Computer Science
+    date: May 2027
+    date_value: "2027-05"
+    expected: true
+    details: Concentrations in Software Engineering and Cybersecurity.
+  - institution: Sinclair Community College
+    degree: Associate of Science in Computer Science
+    date: May 2025
+    date_value: "2025-05"

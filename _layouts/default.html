@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-    {% include head.html %}
-  <body class="w3-theme-d5 w3-text-grey">
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTDSVS82"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    {% include navbar.html %}
-
-    <div class="w3-main">
-        {{ content }}
-        {% include footer.html %}
+<!doctype html>
+<html lang="en" data-theme="midnight-olive">
+  {% include head.html %}
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTDSVS82" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="site-shell">
+      {% include navbar.html %}
+      <main id="main-content">{{ content }}</main>
+      {% include footer.html %}
     </div>
-
   </body>
 </html>

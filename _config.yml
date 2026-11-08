@@ -1,0 +1,25 @@
+title: Joseph Lefkovitz
+tagline: Software Engineer
+description: Joseph Lefkovitz is a software engineer and University of Dayton computer science student building backend systems, open-source tools, and self-hosted services.
+url: https://lefkovitzj.com
+baseurl: ""
+lang: en-US
+author:
+  name: Joseph Lefkovitz
+  image: /images/profile_high_res.jpg
+  same_as:
+    - https://github.com/lefkovitzj
+    - https://www.linkedin.com/in/joseph-lefkovitz/
+defaults:
+  - scope:
+      path: projects
+      type: pages
+    values:
+      permalink: /projects/:basename
+plugins:
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - docker-compose.yml
