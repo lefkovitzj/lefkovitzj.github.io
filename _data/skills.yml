@@ -1,0 +1,21 @@
+languages:
+  - name: Java
+    tools: [Java 21, Spring Boot]
+  - name: Python
+    tools: [Python3, Flask, FastAPI]
+  - name: C / C++
+    tools: [C17, C++, CMake, System Programming, Linux Programming]
+primary_tooling: [AWS, GitHub Actions, Docker, Kafka, Git, Linux]
+infrastructure:
+  - name: Version control
+    tools: [Git, GitHub, Bitbucket, Gitea]
+  - name: DevOps
+    tools: [Docker, GitHub Actions, Grafana & Prometheus, Portainer]
+  - name: AWS
+    tools: [Elastic Compute Cloud (EC2), Simple Storage Service (S3), Relational Database Service (RDS), Simple Queue Service (SQS), Identity and Access Management (IAM)]
+  - name: Linux
+    tools: [Ubuntu, "RHEL-based (CentOS, Rocky)", Debian, Amazon Linux]
+  - name: Additional web experience
+    tools: [PHP, Symfony, WordPress, HTML5, CSS3, Bootstrap, W3.CSS]
+  - name: Additional Python libraries
+    tools: [Pygame, SQLite3, Openpyxl, PyPDF2]

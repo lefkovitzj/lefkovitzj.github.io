@@ -1,0 +1,43 @@
+categories:
+  - id: infrastructure
+    name: Infrastructure & monitoring
+    description: Container management, reverse proxying, and visibility into the services running in the lab.
+    services:
+      - name: Portainer
+        purpose: Container management
+        description: A central place to manage the containers running on my home server.
+      - name: Nginx Proxy Manager
+        purpose: Reverse proxy & SSL
+        description: Reverse proxy configuration and SSL certificate management for hosted services.
+      - name: Grafana
+        purpose: Monitoring & metrics
+        description: Dashboards for exploring metrics and keeping an eye on the lab.
+      - name: Prometheus
+        purpose: Time-series metrics
+        description: Metrics collection to support monitoring alongside Grafana.
+  - id: development-tools
+    name: Development tools & automation
+    description: Self-hosted tools for source control, project tracking, automated workflows, and database administration.
+    services:
+      - name: Gitea
+        purpose: Self-hosted Git
+        description: A home for Git repositories on my own infrastructure.
+      - name: Vikunja
+        purpose: Projects & tasks
+        description: Kanban boards and task tracking for organizing projects and things to do.
+      - name: n8n
+        purpose: Workflow automation
+        description: A place to build and run automated workflows.
+      - name: CloudBeaver
+        purpose: Database administration
+        description: A browser-based database interface from the DBeaver ecosystem.
+  - id: personal-cloud
+    name: Personal cloud
+    description: Object storage and event streaming to experiment with backend systems.
+    services:
+      - name: Garage S3
+        purpose: Object storage
+        description: Distributed object storage with an S3-compatible interface.
+      - name: Apache Kafka
+        purpose: Event streaming
+        description: An event-streaming service for exploring applications that exchange data through events.

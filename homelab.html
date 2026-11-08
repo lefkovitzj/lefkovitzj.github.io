@@ -1,0 +1,69 @@
+---
+layout: default
+title: Homelab
+description: Inside Joseph Lefkovitz's homelab, with containerized applications running on Ubuntu Server and access restricted to a private tailnet.
+permalink: /homelab
+---
+{% assign service_count = 0 %}
+{% for category in site.data.homelab.categories %}
+  {% assign service_count = service_count | plus: category.services.size %}
+{% endfor %}
+<header class="page-intro homelab-intro">
+  <div>
+    <p class="eyebrow">Self-hosting & homelabbing</p>
+    <h1>My homelab.</h1>
+    <p class="page-lead">A place to run useful software, deploy my own projects, and explore the systems that keep it all working.</p>
+    <p class="homelab-summary">I run containerized applications with Docker on an Ubuntu Server machine, accessible only through my private tailnet. It's a hands-on space to explore backend engineering, from monitoring containers to deploying my own applications.</p>
+    <div class="button-row"><a class="btn btn-primary" href="#services">Explore the services <span class="hero-button-arrow" aria-hidden="true">↓</span></a></div>
+  </div>
+  <aside class="homelab-overview" aria-labelledby="overview-heading">
+    <p class="eyebrow" id="overview-heading">Inside the lab</p>
+    <dl>
+      <div><dt>Services in this overview</dt><dd>{{ service_count }}</dd></div>
+      <div><dt>Operating system</dt><dd>Ubuntu Server</dd></div>
+      <div><dt>Container platform</dt><dd>Docker</dd></div>
+    </dl>
+    <p>Containers, monitoring, and backend services running on my own infrastructure.</p>
+  </aside>
+</header>
+
+<section id="services" class="section-block homelab-services" aria-labelledby="services-heading">
+  <p class="eyebrow">The service directory</p>
+  <h2 id="services-heading">What I'm running.</h2>
+  <p class="homelab-directory-intro">A tour of the services on my home server dashboard, grouped by the role they play in the lab.</p>
+  <nav class="homelab-categories" aria-label="Service categories">
+    {% for category in site.data.homelab.categories %}
+      <a href="#{{ category.id }}">{{ category.name | escape }}</a>
+    {% endfor %}
+  </nav>
+  <div class="homelab-grid">
+    {% for category in site.data.homelab.categories %}
+      <section id="{{ category.id }}" class="homelab-category" aria-labelledby="{{ category.id }}-heading">
+        <header class="homelab-category-header">
+          <h3 id="{{ category.id }}-heading">{{ category.name | escape }}</h3>
+          <p>{{ category.description | escape }}</p>
+        </header>
+        <ul class="homelab-service-list">
+          {% for service in category.services %}
+            <li>
+              <p class="homelab-service-purpose">{{ service.purpose | escape }}</p>
+              <h4>{{ service.name | escape }}</h4>
+              <p class="homelab-service-description">{{ service.description | escape }}</p>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section-block homelab-next" aria-labelledby="homelab-next-heading">
+  <div>
+    <p class="eyebrow">From code to containers</p>
+    <h2 id="homelab-next-heading">See what I've built.</h2>
+    <p>The lab gives my projects a place to run. Explore my programming projects to see what I've built.</p>
+  </div>
+  <div class="button-row">
+    <a class="btn btn-primary" href="{{ '/projects' | relative_url }}">Browse my projects</a>
+  </div>
+</section>

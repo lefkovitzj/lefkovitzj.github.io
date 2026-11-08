@@ -1,0 +1,9 @@
+title: Joseph Lefkovitz
+description: Backend engineering, self-hosting, and open-source projects by Joseph Lefkovitz, a computer science student at the University of Dayton.
+url: https://lefkovitzj.com
+baseurl: ""
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - docker-compose.yml

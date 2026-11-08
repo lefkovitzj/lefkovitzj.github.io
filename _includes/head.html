@@ -1,29 +1,29 @@
 <head>
-    <!-- Google Tag Manager -->
-        <script>
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-MTDSVS82');
-        </script>
-    <!-- End Google Tag Manager -->
-    <title>{{ page.title }} | Joseph Lefkovitz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Image preload -->
-    <link rel="preload" href="/images/profile.jpg" as="image" media="(width > 992px)" />
-
-    <!-- Load needed CSS -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <script src="https://kit.fontawesome.com/fb7000b266.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
-    <link rel="stylesheet" href="/css/base.css">
-
-    <!-- Load needed JS -->
-    <script src="/javascript/navigation.js"></script>
-    <script src="/javascript/typewriter.js"></script>
-
-    <link rel="shortcut icon" type="image/x-icon" href="/images/josephl.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>{{ page.title | escape }} | Joseph Lefkovitz</title>
+  {% assign description = page.description | default: page.summary | default: site.description %}
+  <meta name="description" content="{{ description | escape }}">
+  <meta property="og:title" content="{{ page.title | escape }} | Joseph Lefkovitz">
+  <meta property="og:description" content="{{ description | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ '/images/profile_high_res.jpg' | absolute_url }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" type="image/x-icon" href="{{ '/images/josephl.ico' | relative_url }}">
+  {% if page.title == 'Home' %}
+    <link rel="preload" href="{{ '/images/profile_high_res.jpg' | relative_url }}" as="image">
+  {% endif %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@5">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="{{ '/css/base.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  <script src="{{ '/javascript/navigation.js' | relative_url }}" defer></script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MTDSVS82');
+  </script>
 </head>

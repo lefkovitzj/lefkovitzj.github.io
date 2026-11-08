@@ -1,34 +1,28 @@
-classList = []
+const mobileMenu = document.querySelector('.mobile-navigation');
 
-// Open and close the sidebar on medium and small screens
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
+if (mobileMenu) {
+  const label = mobileMenu.querySelector('.menu-label');
+  const icon = mobileMenu.querySelector('.menu-icon');
+  const updateToggle = () => {
+    label.textContent = mobileMenu.open ? 'Close' : 'Menu';
+    icon.textContent = mobileMenu.open ? '×' : '☰';
+  };
 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
+  mobileMenu.addEventListener('toggle', updateToggle);
+  updateToggle();
 
-// Change style of top container on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
-    document.getElementById("myIntro").classList.add("w3-show-inline-block");
-  } else {
-    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
-    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
-  }
-}
+  mobileMenu.addEventListener('click', (event) => {
+    if (event.target.closest('a')) mobileMenu.open = false;
+  });
 
-// Accordions
-function openAccordion(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
+  document.addEventListener('click', (event) => {
+    if (!mobileMenu.contains(event.target)) mobileMenu.open = false;
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && mobileMenu.open) {
+      mobileMenu.open = false;
+      mobileMenu.querySelector('summary').focus();
+    }
+  });
 }

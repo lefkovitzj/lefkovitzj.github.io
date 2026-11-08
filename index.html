@@ -1,189 +1,72 @@
---- 
+---
 layout: default
 title: Home
---- 
-<div id="myTop" class="w3-container paddingless-small w3-top w3-green w3-large">
-  <p><i class="fa fa-bars w3-button w3-green w3-hover-green w3-hide-large w3-xlarge" onclick="w3_open()"></i>
-  <span id="myIntro" class="w3-hide">I'm Joseph Lefkovitz, Computer Science Student and Hobbyist</span></p>
-</div>
-
-<header class="w3-container w3-green w3-hide-small">
-  <h1 class="w3-xxxlarge"><p class="typewrite" data-period="1000" data-type='["Computer Science Student", "Programming Hobbyist", "Software Developer" ]' data-starter="I'm Joseph Lefkovitz, ">&nbsp;<br><span class="wrap">&nbsp;</span></h1>
+---
+<header class="home-hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Backend engineering · Open source</p>
+    <h1 class="hero-title">Joseph<br><span>Lefkovitz</span></h1>
+    <p class="hero-lead">I build practical software <br>and explore how it can work better.</p>
+    <p class="hero-summary">Computer science at the University of Dayton, graduating in May 2027. Incoming Software Engineering Program Analyst at JPMorgan Chase in July 2027.</p>
+    <div class="button-row"><a class="btn btn-primary" href="#projects">Explore my work <span class="hero-button-arrow" aria-hidden="true">↓</span></a><a class="text-link" href="https://github.com/lefkovitzj" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+  </div>
+  <figure class="hero-portrait"><img src="{{ '/images/profile_high_res.jpg' | relative_url }}" alt="Joseph Lefkovitz, photographed against green foliage" width="640" height="640" fetchpriority="high"></figure>
 </header>
-<header class="w3-container w3-green w3-hide-large w3-hide-medium">
-  <h1 class="w3-xlarge"><p class="typewrite" style="padding-top: 50px" data-period="1000" data-type='["Computer Science Student", "Programming Hobbyist", "Software Developer" ]' data-starter="I'm Joseph Lefkovitz, ">&nbsp;<br><span class="wrap">&nbsp;</span></h1>
-</header>
-<div class="w3-container paddingless-small w3-padding-32">
-<div class="w3-row w3-margin w3-dark-grey">
-<div class="w3-container">
-  <h2>Who am I?</h2>
-   <p>&nbsp;&nbsp;&nbsp;&nbsp;I am a college Junior studying Computer Science at the University of Dayton, with dual concentrations in Software Engineering and Cybersecurity. I have already earned my associate's degree in Computer Science from Sinclair Community College, and I recently completed a 9+ month Software Engineering Internship at NexSens Technology. Having attended their <i>Code for Good</i> Hackathon in 2025, I will be interning in the JP Morgan Chase Software Engineering Program for summer 2026.</p>
-   <p>&nbsp;&nbsp;&nbsp;&nbsp;In my free time I serve as the Vice President of the University of Dayton chapter of the Association of Computing Machinery, develop open-source software projects, and spend time with family and friends. In both personal and professional life I am dedicated to pursuing excellence.</p>
-</div>
-
-</div>
-<div class="w3-row w3-margin w3-dark-grey">
-<div class="w3-container">
-  <h2>Skills & Knowledge</h2>
-  <p class="w3-large w3-text-light-green"><b><i class="fa fa-code w3-margin-right w3-text-light-green"></i>Programming & Scripting Languages</b></p>
-          <h4>Python</h4>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-green w3-animate-opacity" style="width:80%">Advanced</div>
-          </div>
-          <br>
-          <span class="w3-light-green w3-tag w3-round">Python 3</span>
-          <span class="w3-light-green w3-tag w3-round">Flask</span>
-          <span class="w3-light-green w3-tag w3-round">Pygame</span>
-          <span class="w3-light-green w3-tag w3-round">SQLite3</span>
-          <span class="w3-light-green w3-tag w3-round">Openpyxl</span>
-          <span class="w3-light-green w3-tag w3-round">PyPDF2</span>
-          <br>
-          <hr>
-          <h4>PHP</h4>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-green w3-animate-opacity" style="width:60%">Intermediate</div>
-          </div>
-          <br>
-          <span class="w3-light-green w3-tag w3-round">Symfony</span>
-          <span class="w3-light-green w3-tag w3-round">WordPress</span>
-          <br>
-          <hr>
-          <h4>HTML/CSS</h4>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-green w3-animate-opacity" style="width:60%">Intermediate</div>
-          </div>
-          <br>
-          <span class="w3-light-green w3-tag w3-round">HTML5</span>
-          <span class="w3-light-green w3-tag w3-round">CSS3</span>
-          <span class="w3-light-green w3-tag w3-round">Bootstrap</span>
-          <span class="w3-light-green w3-tag w3-round">W3.CSS</span>
-          <br>
-          <hr>
-          <h4>Java</h4>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-green w3-animate-opacity" style="width:60%">Intermediate</div>
-          </div>
-          <hr>
-          <h4>C++</h4>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-green w3-animate-opacity" style="width:40%">Fundamental</div>
-          </div>
-  </p>
-  <br>
-  <p class="w3-large w3-text-light-green"><b><i class="fa fa-code w3-margin-right w3-text-light-green"></i>Infrastructure & Ecosystem</b></p>
-  
-  <!-- Start Dev Tools Accordion-->
-  <!-- Version Control -->
-  <button onclick="openAccordion('tools-version-control')" class="w3-button w3-block w3-left-align w3-round-xlarge w3-green w3-hover-light-green w3-hover-text-white">
-    <i class="fa fa-code-fork bullet-icon"></i>Version Control <i class="fa fa-caret-down"></i>
-  </button>
-  <div id="tools-version-control" class="w3-container w3-hide w3-show">
-    <br>
-    <span><i class="fa fa-git bullet-icon"></i>Git<br></span>
-    <span><i class="fa fa-github bullet-icon"></i>GitHub<br></span>
+<section id="projects" class="section-block selected-work" aria-labelledby="projects-heading">
+  <div class="section-heading"><h2 id="projects-heading">Selected work</h2><a href="{{ '/projects' | relative_url }}">All projects</a></div>
+  {% assign featured_projects = site.pages | where: 'layout', 'project' | where: 'featured', true | sort: 'order' %}
+  <div class="featured-grid">{% for project in featured_projects %}{% include project-card.html project=project %}{% endfor %}</div>
+</section>
+<section id="about" class="section-block" aria-labelledby="about-heading">
+  <p class="eyebrow">Background & interests</p><h2 id="about-heading">Who am I?</h2>
+  <div class="about-columns">
+    <div class="section-copy">{% for paragraph in site.data.profile.biography %}<p>{{ paragraph }}</p>{% endfor %}</div>
+    <aside class="about-note"><h3>Self-hosting & homelabbing</h3><p>My home server is where I explore the systems behind applications, from containers and monitoring to personal cloud services and deployments of my own projects.</p><a class="btn btn-outline btn-sm" href="{{ '/homelab' | relative_url }}">Explore my homelab</a></aside>
   </div>
-  <br>
-  <!-- DevOps -->
-  <button onclick="openAccordion('tools-devops')" class="w3-button w3-block w3-left-align w3-round-xlarge w3-green w3-hover-light-green w3-hover-text-white">
-    <i class="fa-solid fa-infinity bullet-icon"></i>DevOps <i class="fa fa-caret-down"></i>
-  </button>
-  <div id="tools-devops" class="w3-container w3-hide w3-show">
-    <br>
-    <span><i class="fa-brands fa-docker bullet-icon"></i>Docker<br></span>
-    <span><i class="fa-regular fa-circle-play bullet-icon"></i>GitHub Actions<br></span>
-    <span><i class="fa-solid fa-chart-line bullet-icon"></i> Grafana & Prometheus</span><br>
-    <span><i class="fa-solid fa-cubes bullet-icon"></i> Portainer</span><br>
+</section>
+<div class="background-grid">
+  <section id="experience" class="section-block" aria-labelledby="experience-heading">
+    <p class="eyebrow">Professional experience</p><h2 id="experience-heading">Where I've worked</h2>
+    <ul class="resume-list">
+      {% for position in site.data.profile.experience %}
+        <li class="resume-entry">
+          <h3>{{ position.company | escape }}</h3>
+          <p class="resume-role">{{ position.role | escape }}</p>
+          <p class="resume-date">{% if position.incoming %}<span class="resume-status">Incoming</span> · {% endif %}<time datetime="{{ position.start_date }}">{{ position.start | escape }}</time>{% if position.end %} – <time datetime="{{ position.end_date }}">{{ position.end | escape }}</time>{% endif %}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section id="education" class="section-block" aria-labelledby="education-heading">
+    <p class="eyebrow">Education</p><h2 id="education-heading">What I've studied</h2>
+    <ul class="resume-list">
+      {% for education in site.data.profile.education %}
+        <li class="resume-entry">
+          <h3>{{ education.institution | escape }}</h3>
+          <p class="resume-role">{{ education.degree | escape }}</p>
+          <p class="resume-date">{% if education.expected %}Expected {% endif %}<time datetime="{{ education.date_value }}">{{ education.date | escape }}</time></p>
+          {% if education.details %}<p class="resume-detail">{{ education.details | escape }}</p>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
+<section id="skills" class="section-block" aria-labelledby="skills-heading">
+  <p class="eyebrow">Languages & ecosystem</p><h2 id="skills-heading">Skills & knowledge</h2>
+  <div class="skill-grid">
+    {% for language in site.data.skills.languages %}<article class="card skill-card"><div class="skill-heading"><h3>{{ language.name | escape }}</h3></div><div class="tags">{% for tool in language.tools %}<span class="badge badge-soft">{{ tool | escape }}</span>{% endfor %}</div></article>{% endfor %}
   </div>
-  <br>
-  <!-- Version Control -->
-  <button onclick="openAccordion('tools-aws')" class="w3-button w3-block w3-left-align w3-round-xlarge w3-green w3-hover-light-green w3-hover-text-white">
-    <i class="fa-brands fa-aws bullet-icon"></i>AWS <i class="fa fa-caret-down"></i>
-  </button>
-  <div id="tools-aws" class="w3-container w3-hide w3-show">
-    <br>
-    <span><i class="fa fa-cloud bullet-icon"></i>Elastic Compute Cloud (EC2)<br></span>
-    <span><i class="fa fa-file-image-o bullet-icon"></i>Simple Storage Service (S3)<br></span>
-    <span><i class="fa fa-database bullet-icon"></i>Relational Database Service (RDS)<br></span>
-    <span><i class="fa fa-tasks bullet-icon"></i>Simple Queue Service (SQS)<br></span>
-    <span><i class="fa fa-user bullet-icon"></i>Identity and Access Management (IAM)<br></span>
+  <h3 class="tools-heading">Tooling</h3>
+  <div class="tags primary-tooling" aria-label="Core tooling">{% for tool in site.data.skills.primary_tooling %}<span class="badge badge-soft">{{ tool | escape }}</span>{% endfor %}</div>
+  <h3 class="tools-heading">Infrastructure & additional experience</h3>
+  <div class="tool-grid">
+    {% for group in site.data.skills.infrastructure %}<details class="collapse collapse-arrow tool-group"><summary class="collapse-title">{{ group.name | escape }}</summary><div class="collapse-content"><ul>{% for tool in group.tools %}<li>{{ tool | escape }}</li>{% endfor %}</ul></div></details>{% endfor %}
   </div>
-  <br>
-  <!-- Linux -->
-  <button onclick="openAccordion('tools-linux')" class="w3-button w3-block w3-left-align w3-round-xlarge w3-green w3-hover-light-green w3-hover-text-white">
-    <i class="fa fa-linux bullet-icon"></i>Linux <i class="fa fa-caret-down"></i>
-  </button>
-  <div id="tools-linux" class="w3-container w3-hide w3-show">
-    <br>
-    <span><i class="fa-brands fa-ubuntu bullet-icon"></i>Ubuntu Server<br></span>
-    <span><i class="fa-brands fa-redhat bullet-icon"></i>RHEL-based (CentOS, Rocky)<br></span>
-    <span><i class="fa-brands fa-debian bullet-icon"></i>Debian<br></span>
+</section>
+<section id="contact" class="section-block" aria-labelledby="contact-heading">
+  <p class="eyebrow">Conversations & contributions</p><h2 id="contact-heading">Get in touch</h2>
+  <div class="contact-grid">
+    <div><h3>Questions or ideas?</h3><p>Have specific questions, or just want to reach out to me directly? Feel free to email me, and I will do my best to get back to you as soon as possible.</p><a class="btn btn-primary" href="mailto:contact@lefkovitzj.com">contact@lefkovitzj.com</a><p class="contact-social">For professional updates, <a href="https://www.linkedin.com/in/joseph-lefkovitz/" target="_blank" rel="noopener noreferrer">connect on LinkedIn</a>.</p></div>
+    <div><h3>Contribute to a project</h3><p>Want to share your thoughts on code that I have written? If you have suggestions or changes to my projects, feel free to open a pull request via GitHub. Your feedback is greatly appreciated!</p><a class="btn btn-outline" href="https://github.com/lefkovitzj" target="_blank" rel="noopener noreferrer">Find my projects on GitHub</a></div>
   </div>
-  <br>
-  
-  <!-- End Dev Tools Accordion-->
-  <br>
-</div>
-
-</div>
-<div class="w3-row w3-margin w3-dark-grey">
-<div class="w3-container">
-  <h2>Contact Me!</h2>
-  <div class="w3-row">
-  <div class="w3-col m6">
-    <p class="w3-padding">Want to share your thoughts on code that I have written?<br>If you have suggestions or changes to my projects, feel free to open a pull request via GitHub. Your feedback is greatly appreciated!</p>
-  </div>
-  <div class="w3-col m6">
-    <p class="w3-padding">Have specific questions, or just want to reach out to me directly?<br>Feel free to email me, and I will do my best to get back to you as soon as possible!</p>
-  </div>
-</div>
-<div class="w3-row contact-me">
-  <div class="w3-col m6">
-    <a href="https://github.com/lefkovitzj" class="w3-button w3-green w3-hover-light-green w3-hover-text-white w3-hide-medium w3-hide-small"><p><i class="fa fa-github fa-fw w3-text-white"> </i> Open a pull request on my GitHub!</p></a>
-    <a href="https://github.com/lefkovitzj" class="w3-button w3-green w3-hover-light-green w3-hover-text-white w3-hide-large"><p><i class="fa fa-github fa-fw w3-text-white"> </i> Open a pull request!</p></a>
-  </div>
-  <div class="w3-col m6">
-    <a href="mailto:contact@lefkovitzj.com" class="w3-button w3-green w3-hover-light-green w3-hover-text-white w3-hide-medium w3-hide-small"><p><i class="fa fa-envelope fa-fw w3-text-white"> </i> Email me at contact@lefkovitzj.com</p> </a>
-    <a href="mailto:contact@lefkovitzj.com" class="w3-button w3-green w3-hover-light-green w3-hover-text-white w3-hide-large"><p><i class="fa fa-envelope fa-fw w3-text-white"> </i> contact@lefkovitzj.com</p> </a>
-  </div>
-</div>
-</div>
-</div>
-<div class="w3-row w3-margin w3-dark-grey">
-<div class="w3-container">
-<h2>Programming Projects</h2>
-    <div class="w3-container">
-        <h3 class="w3-text-green"><b><a href="projects/acm-meeting-records" target="_blank"><i class="fa fa-server fa-fw w3-margin-right"></i>ACM Meeting Records</a></b></h3>
-        <span class="w3-light-green w3-tag w3-round">Python 3</span>
-        <span class="w3-light-green w3-tag w3-round">Flask</span>
-        <span class="w3-light-green w3-tag w3-round">Docker</span>
-        <span class="w3-light-green w3-tag w3-round">SQLite</span>
-        <p>A containerized web application for role-based management of an ACM student chapter's meetings, providing an administrator dashboard and public listing of historical meeting records.</p>
-        <hr>
-    </div>
-    <div class="w3-container">
-        <h3 class="w3-text-green"><b><a href="projects/py-pdf-app" target="_blank"><i class="fa fa-server fa-fw w3-margin-right"></i>PyPdfApp</a></b></h3>
-        <span class="w3-light-green w3-tag w3-round">Python 3</span>
-        <span class="w3-light-green w3-tag w3-round">PyMuPDF</span>
-        <span class="w3-light-green w3-tag w3-round">CustomTKinter</span>
-        <span class="w3-light-green w3-tag w3-round">Pillow</span>
-        <span class="w3-light-green w3-tag w3-round">Requests</span>
-        <p>An robust PDF viewing and manipulation application with a user interface. Handles multiple PDFs with control over everything from markup to metadata and even encryption & custom file signature.</p>
-        <hr>
-    </div>
-    <div class="w3-container">
-        <h3 class="w3-text-green"><b><a href="projects/py-personal-vault" target="_blank"><i class="fa fa-server fa-fw w3-margin-right"></i>PyPersonalVault</a></b></h3>
-        <span class="w3-light-green w3-tag w3-round">Python</span>
-        <span class="w3-light-green w3-tag w3-round">PyCryptoDome</span>
-        <span class="w3-light-green w3-tag w3-round">CustomTkinter</span>
-        <p>An encryption service application that uses RSA encryption to secure files. This project is built in Python, primarily using the PyCryptodome and CustomTkinter modules.</a></p>
-        <hr>
-    </div>
-    <div class="w3-container">
-    <a href="projects" class="w3-button w3-green w3-hover-light-green w3-hover-text-white w3-center w3-hide-medium w3-hide-small" style="width:100%"><p>Learn more about my other programming projects!</p></a>
-    <a href="projects" class="w3-button w3-green w3-hover-light-green w3-hover-text-white w3-center w3-hide-large" style="width:100%"><p>View my projects!</p></a>
-    <br><br>
-    </div>
-</div>
-</div>
-
-</div>
+</section>

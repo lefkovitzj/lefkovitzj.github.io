@@ -1,20 +1,10 @@
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" id="mySidebar">
-
-  <a class="w3-bar-item w3-button w3-large w3-hover-theme" style="padding-bottom:0px;" href="/">
-        <img src="/images/profile.jpg" class="w3-circle" alt="my professional headshot photo" style="width:218px">
-        <p style="margin-top:18px;margin-bottom:4px;font-size: 20px;">Joseph Lefkovitz</p>      
+<header class="site-header navbar">
+  <a class="site-wordmark" href="{{ '/' | relative_url }}" aria-label="Joseph Lefkovitz — Home">
+    Joseph Lefkovitz<span>Software engineer</span>
   </a>
-
-  <div class="w3-bar-item" style="padding-top: 4px;font-weight: normal;font-size: 32px !important;">
-  <a href="mailto:contact@lefkovitzj.com" aria-label="Email Address"><i class="fa fa-envelope-square w3-hover-opacity"></i></a>&nbsp;
-  <a href="https://github.com/lefkovitzj" target="_blank" aria-label="GitHub Account"><i class="fa fa-github-square w3-hover-opacity"></i></a>&nbsp;
-  <a href="https://www.linkedin.com/in/joseph-lefkovitz/" target="_blank" aria-label="LinkedIn Account"><i class="fa-brands fa-square-linkedin w3-hover-opacity"></i></a>
-  
-  </div>
-  <button class="w3-bar-item w3-button w3-hide-large w3-large" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
-  <a class="w3-bar-item w3-button w3-green w3-hover-light-green" href="/">Home</a>
-  <a class="w3-bar-item w3-button w3-hover-light-green" href="/projects">Projects</a>
-  <a class="w3-bar-item w3-button w3-hover-light-green" href="https://github.com/lefkovitzj" target="_blank">GitHub</a>
-</nav>
-
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" id="myOverlay"></div>
+  <nav class="desktop-navigation" aria-label="Main navigation">{% include nav-links.html %}</nav>
+  <details class="mobile-navigation">
+    <summary class="btn btn-ghost" aria-controls="mobile-menu"><span class="menu-label">Menu</span><span class="menu-icon" aria-hidden="true">☰</span></summary>
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation">{% include nav-links.html %}</nav>
+  </details>
+</header>

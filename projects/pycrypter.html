@@ -1,7 +1,13 @@
 ---
 layout: project
+project_id: pycrypter
+category: Encryption tool
+summary: "A lightweight alternative to PyPersonalVault for encrypting and decrypting multiple files using AES and a salted password."
+technologies: ["Python", "PyCryptodome", "Tkinter"]
+order: 6
+featured: false
+related_projects: ["py-personal-vault", "py-file-transfer"]
 title: PyCrypter
-project_title: PyCrypter
 project_run: "Run the project by executing the app.py file in the command line, IDE, or any other method to run a Python file.<br>When launched from the command line, there are optional arguments for the mode (-e or -d) and password (any valid string). If these are not provided, user input will be gathered from the console."
 project_source_link: https://github.com/lefkovitzj/PyCrypter
 credits_thanks_message: A massive thank you to the developers and contributors of the PyCryptoDome and CustomTkinter projects!
@@ -27,21 +33,11 @@ requirements:
     subtext: Python Standard Library
   - text: threading
     subtext: Python Standard Library
-
-
-projects:
-  - name: PyPersonalVault
-    description: This GUI-based application allows users to create "vaults" with distinct passwords and use an individual vault to encrypt or decrypt files using the RSA system.
-    path: py-personal-vault
-    source: https://github.com/lefkovitzj/PyPersonalVault/
-  - name: PyFileTransfer
-    description: A simple project built using Python's sockets module, designed for simple transfer of files between a server and client.
-    path: py-file-transfer
-    source: https://github.com/lefkovitzj/PyFileTransfer/
 ---
-PyCrypter is a light-weight alternative to <a href="projects/py-personal-vault">my PyPersonalVault project</a>. Designed to be started from the command line with or without arguments, PyCrypter performs fast encryption or decryption using AES with a salted version of the password. Multiple files can be selected for encryption or decryption in one run of the program, and each will generate a file with the same name (".bin" is added for encrypted files) as the original.
-<br><br>
-The necessary files to run PyCrypter are:
+<p>PyCrypter is a light-weight alternative to <a href="/projects/py-personal-vault">my PyPersonalVault project</a>. Designed to be started from the command line with or without arguments, PyCrypter performs fast encryption or decryption using AES with a salted version of the password. Multiple files can be selected for encryption or decryption in one run of the program, and each will generate a file with the same name (".bin" is added for encrypted files) as the original.</p>
+
+<p>The necessary files to run PyCrypter are:</p>
+
 <ul>
     <li>app.py</li>
     <li>utils.py</li>
